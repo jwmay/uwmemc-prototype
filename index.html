@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UW MEM-C</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+      <p>OFF CANVAS MENU</p>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="header">
+        <div class="header-top" id="branding">
+          <div class="header-left">
+            <div class="logo">
+              <a href="#">
+                <img data-interchange="[img/branding/uwmemc-logo-small.png, small], [img/branding/uwmemc-logo-large.png, large]" alt="UW MEM-C Logo">
+              </a>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="search">
+              <div class="search-toggle" id="searchToggle">
+                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+              </div>
+              <div class="search-form">
+                <form role="search" method="get" id="searchform" action="">
+                  <input type="search" id="searchForm" name="query" placeholder="search">
+                  <button class="search-button">
+                    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="toggle">
+              <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom" data-sticky-container>
+          <div class="navbar sticky" data-sticky data-margin-top="0" data-top-anchor="branding:bottom">
+            <div class="nav">
+              <ul class="menu align-center">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Facilities</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <div class="orbit-controls">
+            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          </div>
+          <ul class="orbit-container">
+            <li class="orbit-slide is-active">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="img/orbit/01.png" alt="Space">
+              </figure>
+            </li>
+            <li class="orbit-slide is-active">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="img/orbit/02.png" alt="Space">
+              </figure>
+            </li>
+            <li class="orbit-slide is-active">
+              <figure class="orbit-figure">
+                <img class="orbit-image" src="img/orbit/03.png" alt="Space">
+              </figure>
+            </li>
+          </ul>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          </nav>
+        </div>
+      </div>
+
+      <div style="height:1500px;">CONTENT</div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="https://use.fontawesome.com/c17e0ba756.js"></script>
+    <script src="js/min/app-min.js"></script>
+  </body>
+</html>

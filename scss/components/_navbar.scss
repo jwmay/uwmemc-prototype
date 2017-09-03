@@ -1,0 +1,199 @@
+/// Height of header on small/medium.
+$header-height-small: 70px;
+
+/// Height of header on large.
+$header-height-large: 196px;
+
+/// Box shadowing for header elements.
+$header-box-shadow: 0px 6px 24px 1px rgba(0,0,0,0.3);
+
+/// Background color for header elements.
+$header-background-color: $white;
+
+/// Navbar height before page scrolling.
+$navbar-height-expanded: 84px;
+
+/// Navbar height after page scrolling.
+$navbar-height-collapsed: 56px;
+
+/// Search bar height.
+$search-bar-height: 49px;
+
+
+////
+// Header : Base Styles
+////
+.header {
+  position: relative;
+  z-index: 100;
+  
+  .header-top {
+    @include xy-grid-container;
+    @include xy-grid;
+    background-color: $header-background-color;
+    width: 100%;
+  }
+
+  .header-left,
+  .header-right {
+    @include xy-cell(50%);
+    display: flex;
+    align-items: center;
+  }
+
+  .header-right {
+    justify-content: flex-end;
+  }
+
+  ////
+  // Header : Small/Medium Display Styles
+  ////
+  @include breakpoint(small) {
+    height: $header-height-small;
+
+    .header-top {
+      box-shadow: $header-box-shadow;
+      height: $header-height-small;
+      position: fixed;
+    }
+
+    // Hide the navbar on small/medium displays.
+    .header-bottom {
+      display: none;
+    }
+
+    // Hide the search bar on small/medium displays.
+    .search {
+      display: none;
+    }
+
+    // Show the menu toggle on small/medium displays.
+    .toggle {
+      display: block;
+    }
+  }
+
+  ////
+  // Header : Large Display Styles
+  ////
+  @include breakpoint(large) {
+    height: $header-height-large;
+
+    .header-top {
+      box-shadow: none;
+      position: relative;
+      height: $header-height-large - $navbar-height-expanded;
+    }
+    
+    // Show the navbar on large displays.
+    .header-bottom {
+      display: block;
+    }
+    
+    // Show the search bar on large displays.
+    .search {
+      display: block;
+      position: relative;
+
+      .search-form {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        input {
+          border-radius: 50px;
+          width: $search-bar-height;
+          height: $search-bar-height;
+          padding: 0 20px;
+          margin: 0;
+          z-index: 1;
+          transition: all 1s ease;
+
+          &.expanded {
+            width: 600px;
+            padding-right: 60px;
+          }
+        }
+      }
+
+      .search-button,
+      .search-toggle {
+        position: relative;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: $search-bar-height;
+        width: $search-bar-height;
+        background-color: lighten($primary-color, 5%);
+        color: $white;
+        border-radius: 100%;
+        z-index: 100;
+      }
+
+      .search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 50;
+
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+        }
+      }
+      
+      .search-toggle {
+        transition: all 0.25s ease;
+
+        &:hover {
+          transform: scale(1.2);
+          background-color: lighten($primary-color, 10%);
+        }
+      }
+    }
+    
+    // Hide the menu toggle on large displays.
+    .toggle {
+      display: none;
+    }
+    
+    ////
+    /// Sticky navbar styles.
+    ////
+    .navbar {
+      @include top-bar-container;
+      height: $navbar-height-expanded;
+      overflow-y: hidden;
+      box-shadow: $header-box-shadow;
+      transition: height 0.25s ease;
+      background-color: $header-background-color;
+
+      &.is-stuck {
+        height: $navbar-height-collapsed;
+      }
+      
+      .nav {
+        @include xy-grid-container;
+        width: $grid-container;
+
+        .menu li a {
+          padding: 0;
+          width: 144px;
+          height: 144px;
+          line-height: 144px;
+          font-size: 21px;
+          text-transform: uppercase;
+          text-align: center;
+          color: $dark-gray;
+        
+          &:hover {
+            background-color: $alert-color;
+            border-radius: 100%;
+            opacity: 0.8;
+            color: $white;
+            animation: multicolorBackground 1s linear;
+          }
+        }
+      }
+    }
+  }
+}
