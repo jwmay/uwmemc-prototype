@@ -29,6 +29,56 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/bower_components\/fastclick\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/fastclick\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/fastclick\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/fastclick\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/fastclick\/lib\/fastclick.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/fastclick\/lib\/fastclick.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/fastclick\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/fastclick\/LICENSE",
+		"oF": 0
+		},
+	"\/bower_components\/fastclick\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/fastclick\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/bower_components\/foundation-sites\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -158,6 +208,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/bower_components\/foundation-sites\/_vendor\/normalize-scss\/sass\/normalize\/_vertical-rhythm.scss",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/bower_components\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_contain.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/foundation-sites\/_vendor\/sassy-lists\/stylesheets\/functions\/_contain.scss",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2876,19 +2939,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/bower_components\/foundation-sites\/scss\/prototype\/_typescale.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/bower_components\/foundation-sites\/scss\/prototype\/_typescale.scss",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/bower_components\/foundation-sites\/scss\/settings\/_settings.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -3233,6 +3283,58 @@
 		"mi": 1,
 		"oA": 2,
 		"oAP": "\/bower_components\/foundation-sites\/webpack.config.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/jquery-placeholder\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-placeholder\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery-placeholder\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-placeholder\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery-placeholder\/jquery.placeholder.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery-placeholder\/jquery.placeholder.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/jquery.cookie\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery.cookie\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery.cookie\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery.cookie\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery.cookie\/jquery.cookie.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery.cookie\/jquery.cookie.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -4405,6 +4507,1568 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/bower_components\/modernizr\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/modernizr\/.editorconfig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/.editorconfig",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/.gitignore",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/.travis.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/.travis.yml",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/a-download.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/a-download.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/audio-audiodata-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/audio-audiodata-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/audio-webaudio-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/audio-webaudio-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/battery-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/battery-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/battery-level.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/battery-level.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/blob-constructor.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/blob-constructor.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/canvas-todataurl-type.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/canvas-todataurl-type.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/contenteditable.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/contenteditable.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/contentsecuritypolicy.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/contentsecuritypolicy.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/contextmenu.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/contextmenu.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/cookies.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/cookies.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/cors.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/cors.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-backgroundposition-shorthand.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-backgroundposition-shorthand.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-backgroundposition-xy.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-backgroundposition-xy.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-backgroundrepeat.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-backgroundrepeat.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-backgroundsizecover.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-backgroundsizecover.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-boxsizing.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-boxsizing.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-calc.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-calc.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-cubicbezierrange.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-cubicbezierrange.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-displayrunin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-displayrunin.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-displaytable.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-displaytable.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-filters.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-filters.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-hyphens.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-hyphens.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-lastchild.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-lastchild.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-mask.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-mask.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-mediaqueries.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-mediaqueries.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-objectfit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-objectfit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-overflow-scrolling.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-overflow-scrolling.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-pointerevents.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-pointerevents.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-positionsticky.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-positionsticky.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-regions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-regions.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-remunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-remunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-resize.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-resize.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-scrollbars.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-scrollbars.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-shapes.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-shapes.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-subpixelfont.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-subpixelfont.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-supports.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-supports.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-userselect.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-userselect.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-vhunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-vhunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-vmaxunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-vmaxunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-vminunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-vminunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/css-vwunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/css-vwunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/custom-protocol-handler.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/custom-protocol-handler.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/dart.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/dart.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/dataview-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/dataview-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/dom-classlist.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/dom-classlist.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/dom-createElement-attrs.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/dom-createElement-attrs.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/dom-dataset.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/dom-dataset.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/dom-microdata.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/dom-microdata.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-datalist.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-datalist.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-details.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-details.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-output.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-output.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-progress-meter.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-progress-meter.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-ruby.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-ruby.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-time.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-time.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/elem-track.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/elem-track.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/emoji.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/emoji.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/es5-strictmode.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/es5-strictmode.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/event-deviceorientation-motion.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/event-deviceorientation-motion.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/exif-orientation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/exif-orientation.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/file-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/file-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/file-filesystem.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/file-filesystem.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/forms-fileinput.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/forms-fileinput.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/forms-formattribute.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/forms-formattribute.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/forms-inputnumber-l10n.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/forms-inputnumber-l10n.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/forms-placeholder.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/forms-placeholder.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/forms-speechinput.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/forms-speechinput.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/forms-validation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/forms-validation.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/fullscreen-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/fullscreen-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/gamepad.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/gamepad.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/getusermedia.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/getusermedia.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/ie8compat.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/ie8compat.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/iframe-sandbox.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/iframe-sandbox.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/iframe-seamless.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/iframe-seamless.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/iframe-srcdoc.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/iframe-srcdoc.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/img-apng.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/img-apng.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/img-webp.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/img-webp.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/json.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/json.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/lists-reversed.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/lists-reversed.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/mathml.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/mathml.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/network-connection.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/network-connection.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/network-eventsource.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/network-eventsource.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/network-xhr2.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/network-xhr2.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/notification.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/notification.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/performance.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/performance.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/pointerlock-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/pointerlock-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/quota-management-api.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/quota-management-api.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/requestanimationframe.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/requestanimationframe.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/script-async.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/script-async.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/script-defer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/script-defer.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/style-scoped.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/style-scoped.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/svg-filters.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/svg-filters.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/unicode.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/unicode.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/url-data-uri.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/url-data-uri.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/userdata.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/userdata.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/vibration.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/vibration.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/web-intents.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/web-intents.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/webgl-extensions.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/webgl-extensions.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/websockets-binary.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/websockets-binary.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/window-framed.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/window-framed.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/workers-blobworkers.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/workers-blobworkers.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/workers-dataworkers.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/workers-dataworkers.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/feature-detects\/workers-sharedworkers.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/feature-detects\/workers-sharedworkers.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/grunt.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/grunt.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.ai",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.eps",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.pdf",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png": {
+		"ft": 32768,
+		"iS": 14823,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/bower_components\/modernizr\/modernizr.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/modernizr.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/readme.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/readme.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/modernizr\/test\/basic.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/basic.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/alpha.png": {
+		"ft": 32768,
+		"iS": 163,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/alpha.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png": {
+		"ft": 32768,
+		"iS": 195,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png": {
+		"ft": 32768,
+		"iS": 452,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/form_validation.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/form_validation.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/ga.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/ga.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/green5x5.png": {
+		"ft": 32768,
+		"iS": 72,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/green5x5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/hashchange.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/hashchange.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/jquery.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/jquery.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/mathml.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/mathml.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/mathml_ref.png": {
+		"ft": 32768,
+		"iS": 3140,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/mathml_ref.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/modernizr-1.7.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/modernizr-1.7.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/png_alpha_result.png": {
+		"ft": 32768,
+		"iS": 214,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/png_alpha_result.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/pushstate.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/pushstate.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/red30x30.png": {
+		"ft": 32768,
+		"iS": 93,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/red30x30.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png": {
+		"ft": 32768,
+		"iS": 1339,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png": {
+		"ft": 32768,
+		"iS": 1291,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/style.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/svg-html-blur.png": {
+		"ft": 32768,
+		"iS": 1232,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg-html-blur.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/svg-img.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg-img.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/svg-img.svg.1": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg-img.svg.1",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/svg_blur.png": {
+		"ft": 32768,
+		"iS": 3742,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg_blur.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/table.png": {
+		"ft": 32768,
+		"iS": 2519,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/table.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png": {
+		"ft": 32768,
+		"iS": 796,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png": {
+		"ft": 32768,
+		"iS": 1680,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.eot",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.otf",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.ttf",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.woff",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/windsong_font.png": {
+		"ft": 32768,
+		"iS": 1339,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/windsong_font.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/modernizr\/test\/caniuse_files\/xhtml.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/xhtml.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/index.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/basic.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/basic.html",
+		"oF": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/dumpdata.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/dumpdata.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/lib\/detect-global.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/lib\/detect-global.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/lib\/jquery-1.7b2.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/lib\/jquery-1.7b2.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/lib\/jsonselect.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/lib\/jsonselect.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/lib\/polyfills.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/lib\/polyfills.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/lib\/uaparser.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/lib\/uaparser.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/setup.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/setup.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/unit-caniuse.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/unit-caniuse.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/js\/unit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/js\/unit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/qunit\/qunit.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/qunit\/qunit.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/bower_components\/modernizr\/test\/qunit\/qunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/qunit\/qunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/modernizr\/test\/qunit\/run-qunit.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/modernizr\/test\/qunit\/run-qunit.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/bower_components\/motion-ui\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -5186,25 +6850,14 @@
 		"oAP": "\/css\/app.css.map",
 		"oF": 0
 		},
-	"\/img\/branding\/uwmemc-logo-large.png": {
+	"\/img\/branding\/uwmemc-logo.png": {
 		"ft": 32768,
-		"iS": 3508,
+		"iS": 13046,
 		"oA": 0,
-		"oAP": "\/img\/branding\/uwmemc-logo-large.png",
+		"oAP": "\/img\/branding\/uwmemc-logo.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/branding\/uwmemc-logo-small.png": {
-		"ft": 32768,
-		"iS": 3437,
-		"oA": 0,
-		"oAP": "\/img\/branding\/uwmemc-logo-small.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},

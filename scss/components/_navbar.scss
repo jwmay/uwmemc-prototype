@@ -55,6 +55,10 @@ $search-bar-height: 49px;
       box-shadow: $header-box-shadow;
       height: $header-height-small;
       position: fixed;
+
+      .logo img {
+        max-height: $header-height-small - 16;
+      }
     }
 
     // Hide the navbar on small/medium displays.
@@ -83,6 +87,10 @@ $search-bar-height: 49px;
       box-shadow: none;
       position: relative;
       height: $header-height-large - $navbar-height-expanded;
+
+      .logo img {
+        max-height: $header-height-large - $navbar-height-expanded - 32;
+      }
     }
     
     // Show the navbar on large displays.
@@ -172,10 +180,12 @@ $search-bar-height: 49px;
       }
       
       .nav {
+        @include menu-base;
         @include xy-grid-container;
         width: $grid-container;
+        justify-content: center;
 
-        .menu li a {
+        li a {
           padding: 0;
           width: 144px;
           height: 144px;
@@ -196,4 +206,48 @@ $search-bar-height: 49px;
       }
     }
   }
+}
+
+
+////
+// Side Menu : Base Styles
+////
+.side-menu-container {
+  border-radius: 1000px 0 0 1000px;
+
+  li a {
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-gray;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  ////
+  // Side Menu : Small Display Styles
+  ////
+  @include breakpoint(small) {
+    top: -50px;
+    height: 480px;
+    padding-top: 130px;
+    padding-left: 90px;
+  }
+
+  ////
+  // Side Menu : Medium Display Styles
+  ////
+  @include breakpoint(medium) {
+    top: -80px;
+    height: 600px;
+    padding-top: 180px;
+    padding-left: 80px;
+  }
+}
+
+// Decrease opacity of off-canvas overlay.
+.js-off-canvas-overlay {
+  background: rgba(254, 254, 254, 0.85);
 }

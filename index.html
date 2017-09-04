@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
-      <p>OFF CANVAS MENU</p>
+    <div class="side-menu-container off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+      <ul class="vertical menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Facilities</a></li>
+      </ul>
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
@@ -19,7 +27,7 @@
           <div class="header-left">
             <div class="logo">
               <a href="#">
-                <img data-interchange="[img/branding/uwmemc-logo-small.png, small], [img/branding/uwmemc-logo-large.png, large]" alt="UW MEM-C Logo">
+                <img src="img/branding/uwmemc-logo.png" alt="UW MEM-C Logo">
               </a>
             </div>
           </div>
@@ -44,17 +52,15 @@
         </div>
         <div class="header-bottom" data-sticky-container>
           <div class="navbar sticky" data-sticky data-margin-top="0" data-top-anchor="branding:bottom">
-            <div class="nav">
-              <ul class="menu align-center">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Facilities</a></li>
-              </ul>
-            </div>
+            <ul class="nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Facilities</a></li>
+            </ul>
           </div>
         </div>
       </div>
