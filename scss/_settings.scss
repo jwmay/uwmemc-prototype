@@ -69,20 +69,20 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #4b2e83,
-  secondary: #20559e,
-  success: #217d25,
-  warning: #c7bc36,
-  alert: #d54d24,
+  primary: #4b2e83, // custom
+  secondary: #20559e, // custom
+  success: #217d25, // custom
+  warning: #c7bc36, // custom
+  alert: #d54d24, // custom
 );
-$light-gray: #eee;
-$medium-gray: #ccc;
-$dark-gray: #696969;
+$light-gray: #eee; // custom
+$medium-gray: #ccc; // custom
+$dark-gray: #696969; // custom
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; // custom
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -95,6 +95,7 @@ $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
+$global-button-cursor: auto;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
@@ -436,7 +437,7 @@ $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid lighten($primary-color, 10%);
+$input-border-focus: 1px solid lighten($primary-color, 10%); // custom
 $input-padding: $form-spacing / 2;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
@@ -477,6 +478,7 @@ $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;
 $menu-centered-back-compat: true;
+$menu-icons-back-compat: true;
 
 // 24. Meter
 // ---------
@@ -491,9 +493,14 @@ $meter-fill-bad: $alert-color;
 // 25. Off-canvas
 // --------------
 
-$offcanvas-size: 250px;
-$offcanvas-vertical-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-sizes: (
+  small: 250px,
+  medium: 300px, // custom
+);
+$offcanvas-vertical-sizes: (
+  small: 250px,
+);
+$offcanvas-background: $white; // custom
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0.25);
@@ -839,8 +846,8 @@ $tooltip-radius: $global-radius;
 // 55. Top Bar
 // -----------
 
-$topbar-padding: 0;
-$topbar-background: $white;
+$topbar-padding: 0; // custom
+$topbar-background: $white; // custom
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
@@ -857,5 +864,7 @@ $grid-margin-gutters: (
   medium: 30px
 );
 $grid-padding-gutters: $grid-margin-gutters;
-$block-grid-max: 8;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
 
