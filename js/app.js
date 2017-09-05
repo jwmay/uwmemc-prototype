@@ -52,4 +52,27 @@ $(function() {
     nextClass: 'qd-slider-next',
     prevClass: 'qd-slider-prev',
   });
+
+  // Update left and right images when slide advances.
+  $('.qd-slider').on('slidechange.zf.orbit', function() {
+    var $active = $('.is-active');
+    var $first = $('.qd-slider-container').children().first();
+    var $last = $('.qd-slider-container').children().last();
+    var $left = $('.qd-slider-left img');
+    var $right = $('.qd-slider-right img');
+
+    // The first slide will have no previous child, so use the last slide.
+    var $previous = $active.prev().children('img').attr('src');
+    if ($previous === undefined) {
+      $previous = $last.children('img').attr('src');
+    }
+    $left.attr('src', $previous);
+
+    // The last slide will have no next child, so use the first slide.
+    var $next = $active.next().children('img').attr('src');
+    if ($next === undefined) {
+      $next = $first.children('img').attr('src');
+    }
+    $right.attr('src', $next);
+  });
 });
