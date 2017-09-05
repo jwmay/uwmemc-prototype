@@ -37,4 +37,19 @@ $(function() {
   $search_form.focus(function() {
     showSearchForm();
   });
+
+  ////
+  // Initialize the QD image slider.
+  ////
+  var qdSlider = new Foundation.Orbit($('.qd-slider'), {
+    animInFromLeft: 'fade-in',
+    animInFromRight: 'fade-in',
+    animOutToLeft: 'fade-out',
+    animOutToRight: 'fade-out',
+    containerClass: 'qd-slider-container',
+    slideClass: 'qd-slider-slide',
+    boxOfBullets: 'qd-slider-bullets',
+    nextClass: 'qd-slider-next',
+    prevClass: 'qd-slider-prev',
+  });
 });

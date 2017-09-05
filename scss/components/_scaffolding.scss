@@ -1,0 +1,4 @@
+.full-width-container {
+  @include xy-grid-container;
+  padding: 0 !important;
+}

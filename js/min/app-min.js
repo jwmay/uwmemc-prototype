@@ -1,1 +1,0 @@
-"use strict";$(document).foundation(),$(function(){var i=$("#searchToggle"),n=$("#searchForm"),s=function s(){i.css("visibility","hidden"),n.addClass("expanded").focus()},c=function s(){i.css("visibility","visible"),n.removeClass("expanded")};i.click(function(){s()}),n.blur(function(){this.value||c()}),n.focus(function(){s()})});
