@@ -7384,4 +7384,84 @@ a.thumbnail {
       right: 27%; }
     .qd-slider .qd-slider-previous {
       left: 27%; } }
+
+.jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/img/jumbotron-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  margin: 40px 0;
+  height: 1020px; }
+  .jumbotron .jumbotron-content {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 75rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media print, screen and (min-width: 40em) {
+      .jumbotron .jumbotron-content {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    .jumbotron .jumbotron-content .bubble {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 300px;
+      height: 300px;
+      padding: 40px;
+      border-radius: 100%;
+      opacity: 0.9; }
+      .jumbotron .jumbotron-content .bubble p {
+        margin: 0;
+        color: #fefefe;
+        font-style: italic;
+        font-size: 2em;
+        line-height: 1.2;
+        text-align: center; }
+    .jumbotron .jumbotron-content .bubble-green {
+      background-color: #217d25; }
+    .jumbotron .jumbotron-content .bubble-blue {
+      background-color: #20559e; }
+    .jumbotron .jumbotron-content .bubble-purple {
+      background-color: #4b2e83; }
+  .jumbotron .jumbotron-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+  @media print, screen and (min-width: 64em) {
+    .jumbotron {
+      height: 220px; }
+      .jumbotron .jumbotron-content {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; } }
 /*# sourceMappingURL=app.css.map */

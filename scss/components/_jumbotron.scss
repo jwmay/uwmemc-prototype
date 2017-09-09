@@ -1,0 +1,96 @@
+/// Diameter of jumbotron bubbles.
+$jumbotron-bubble-diameter: 300px;
+
+/// Amount of overhang for bubbles in the jumbotron.
+$jumbotron-bubble-overhang: 40px;
+
+/// Margin around jumbotron bubbles.
+$jumbotron-bubble-margin: 30px;
+
+/// Padding for jumbotron bubbles.
+$jumbotron-bubble-padding: 40px;
+
+/// Height of jumbotron on small/medium displays.
+$jumbotron-height-small: 3 * $jumbotron-bubble-diameter + 4 * $jumbotron-bubble-margin;
+
+/// Height of jumbotron on large displays.
+$jumbotron-height-large: $jumbotron-bubble-diameter - $jumbotron-bubble-overhang * 2;
+
+
+////
+// Jumbotron : Base Styles
+////
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('/img/jumbotron-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  margin: $jumbotron-bubble-overhang 0;
+
+  .jumbotron-content {
+    @include xy-grid-container;
+    @include xy-grid;
+    width: $grid-container;
+    justify-content: space-around;
+
+    .bubble {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $jumbotron-bubble-diameter;
+      height: $jumbotron-bubble-diameter;
+      padding: $jumbotron-bubble-padding;
+      border-radius: 100%;
+      opacity: 0.9;
+
+      p {
+        margin: 0;
+        color: $white;
+        font-style: italic;
+        font-size: 2em;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+
+    .bubble-green {
+      background-color: $success-color;
+    }
+
+    .bubble-blue {
+      background-color: $secondary-color;
+    }
+
+    .bubble-purple {
+      background-color: $primary-color;
+    }
+  }
+
+  ////
+  // Jumbotron : Small/Medium Display Styles
+  ////
+  @include breakpoint(small) {
+    height: $jumbotron-height-small;
+
+    .jumbotron-content {
+      flex-flow: column nowrap;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  ////
+  // Jumbotron : Large Display Styles
+  ////
+  @include breakpoint(large) {
+    height: $jumbotron-height-large;
+
+    .jumbotron-content {
+      flex-flow: row nowrap;
+    }
+  }
+}
