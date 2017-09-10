@@ -1,0 +1,96 @@
+/// Diameter of banner bubbles.
+$banner-bubble-diameter: 42 * $spacer;
+
+/// Amount of overhang for bubbles in the banner.
+$banner-bubble-overhang: 6 * $spacer;
+
+/// Margin around banner bubbles.
+$banner-bubble-margin: 10 * $spacer;
+
+/// Padding for banner bubbles.
+$banner-bubble-padding: 6 * $spacer;
+
+/// Height of banner on small/medium displays.
+$banner-height-small: 3 * $banner-bubble-diameter + 4 * $banner-bubble-margin;
+
+/// Height of banner on large displays.
+$banner-height-large: $banner-bubble-diameter - $banner-bubble-overhang * 2;
+
+
+////
+// Banner : Base Styles
+////
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url('/img/banner-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+
+  .banner-content {
+    @include xy-grid-container;
+    @include xy-grid;
+    width: $grid-container;
+    justify-content: space-evenly;
+
+    .bubble {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $banner-bubble-diameter;
+      height: $banner-bubble-diameter;
+      padding: $banner-bubble-padding;
+      border-radius: 100%;
+      opacity: 0.9;
+
+      p {
+        margin: 0;
+        color: $white;
+        font-style: italic;
+        font-size: 2em;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+
+    .bubble-green {
+      background-color: $success-color;
+    }
+
+    .bubble-blue {
+      background-color: $secondary-color;
+    }
+
+    .bubble-purple {
+      background-color: $primary-color;
+    }
+  }
+
+  ////
+  // Banner : Small/Medium Display Styles
+  ////
+  @include breakpoint(small) {
+    height: $banner-height-small;
+
+    .banner-content {
+      flex-flow: column nowrap;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  ////
+  // Banner : Large Display Styles
+  ////
+  @include breakpoint(large) {
+    height: $banner-height-large;
+    margin: $banner-bubble-overhang 0;
+
+    .banner-content {
+      flex-flow: row nowrap;
+    }
+  }
+}

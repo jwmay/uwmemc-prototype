@@ -1,3 +1,13 @@
+/// Defines the base unit for spacing elements.
+$spacer: 7px;
+
+
+.off-canvas-content {
+  overflow-x: hidden;
+}
+
+
+/// Edge-to-edge content container.
 .full-width-container {
   @include xy-grid-container;
   padding: 0 !important;

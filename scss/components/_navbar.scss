@@ -1,8 +1,8 @@
 /// Height of header on small/medium displays.
-$header-height-small: 70px;
+$header-height-small: 7 * $spacer;
 
 /// Height of header on large displays.
-$header-height-large: 196px;
+$header-height-large: 28 * $spacer;
 
 /// Box shadowing for header elements.
 $header-box-shadow: 0px 6px 24px 1px rgba(0,0,0,0.3);
@@ -11,13 +11,16 @@ $header-box-shadow: 0px 6px 24px 1px rgba(0,0,0,0.3);
 $header-background-color: $white;
 
 /// Navbar height before page scrolling.
-$navbar-height-expanded: 84px;
+$navbar-height-expanded: 12 * $spacer;
 
 /// Navbar height after page scrolling.
-$navbar-height-collapsed: 56px;
+$navbar-height-collapsed: 8 * $spacer;
+
+/// Navbar hover diameter.
+$navbar-hover-diameter: 20 * $spacer;
 
 /// Search bar height.
-$search-bar-height: 49px;
+$search-bar-height: 7 * $spacer;
 
 
 ////
@@ -187,10 +190,10 @@ $search-bar-height: 49px;
 
         li a {
           padding: 0;
-          width: 144px;
-          height: 144px;
-          line-height: 144px;
-          font-size: 21px;
+          width: $navbar-hover-diameter;
+          height: $navbar-hover-diameter;
+          line-height: $navbar-hover-diameter;
+          font-size: 3 * $spacer;
           text-transform: uppercase;
           text-align: center;
           color: $dark-gray;
