@@ -1,0 +1,41 @@
+////
+// Galler : Base Styles
+////
+.gallery {
+  height: 600px;
+  position: relative;
+  top: -90px;
+  margin-bottom: -180px;
+  z-index: -1;
+
+  .gallery-background {
+    background-image: url('/img/gallery-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  .gallery-content {
+    @include xy-grid-container;
+    @include xy-grid;
+    padding-top: 100px;
+  }
+  
+  ////
+  // Gallery : Medium Dispaly Styles
+  ////
+  @include breakpoint(medium) {}
+  
+  ////
+  // Gallery : Large Dispaly Styles
+  ////
+  @include breakpoint(large) {
+    top: -60px;
+    margin-bottom: -140px;
+  }
+}

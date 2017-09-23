@@ -1,0 +1,149 @@
+////
+// Footer : Base Styles
+////
+.footer {
+  background-color: $primary-color;
+  border-radius: 100% 100% 0 0;
+  min-height: 42 * $spacer;
+  width: 200%;
+  position: relative;
+  left: -50%;
+  padding-top: 10 * $spacer;
+  padding-bottom: 3 * $spacer;
+  color: $white;
+  
+  .footer-container {
+    @include xy-grid-container;
+    @include xy-grid;
+    align-content: space-between;
+    width: xy-cell-size(1/2);
+    height: 100%;
+    
+    a {
+      padding-left: 0;
+      color: $white;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    .footer-section {
+      @include xy-cell();
+      margin-top: 4 * $spacer;
+
+      h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+    }
+
+    .footer-bottom {
+      @include xy-cell();
+      margin-top: 4 * $spacer;
+      border-top: 1px solid lighten($primary-color, 10%);
+      padding-top: $spacer;
+      font-size: 12px;
+
+      .spacer {
+        margin: 0 $spacer;
+      }
+    }
+
+    .nav {
+      @include menu-base;
+      @include menu-expand;
+      @include menu-direction(vertical);
+      text-align: center;
+
+      li {
+        text-transform: uppercase;
+
+        a {
+          display: inline-block;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        } 
+      }
+    }
+
+    .logo {
+      width: 70%;
+    }
+
+    .address {
+      padding-left: 13%;
+    }
+
+    .sponsor {
+      padding: 2 * $spacer;
+      display: block;
+      margin: 0 auto;
+
+      &.nsf {
+        width: 30%;
+      }
+
+      &.mrsec {
+        width: 50%;
+      }
+    }
+  }
+
+  ////
+  // Footer : Medium Display Styles
+  ////
+  @include breakpoint(medium) {
+    width: 130%;
+    left: -15%;
+    
+    .footer-container {
+      width: xy-cell-size(7/10);
+      
+      .footer-section {
+        @include xy-cell(4);
+        margin-top: 0;
+
+        h3 {
+          font-size: 1.9375rem;
+        }
+      }
+
+      .nav {
+        text-align: left;
+      }
+
+      .logo {
+        width: 100%;
+      }
+
+      .address {
+        text-align: right;
+      }
+
+      .sponsor {
+        padding: 3 * $spacer;
+
+        &.nsf {
+          width: 50%;
+        }
+        
+        &.mrsec {
+          width: 80%;
+        }
+      }
+    }    
+  }
+
+  ////
+  // Footer : Large Dispaly Styles
+  ////
+  @include breakpoint(large) {
+    .footer-container {
+      width: xy-cell-size(1/2);
+    }
+  }
+}

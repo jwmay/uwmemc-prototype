@@ -22,48 +22,50 @@
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      <div class="header">
-        <div class="header-top" id="branding">
-          <div class="header-left">
-            <div class="logo">
-              <a href="#">
-                <img src="img/branding/uwmemc-logo.png" alt="UW MEM-C Logo">
-              </a>
+      <header>
+        <div class="header">
+          <div class="header-top" id="branding">
+            <div class="header-left">
+              <div class="logo">
+                <a href="#">
+                  <img src="img/branding/uwmemc-logo.png" alt="UW MEM-C Logo">
+                </a>
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="search">
+                <div class="search-toggle" id="searchToggle">
+                  <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="search-form">
+                  <form role="search" method="get" id="searchform" action="">
+                    <input type="search" id="searchForm" name="query" placeholder="search">
+                    <button class="search-button">
+                      <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="toggle">
+                <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
+              </div>
             </div>
           </div>
-          <div class="header-right">
-            <div class="search">
-              <div class="search-toggle" id="searchToggle">
-                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-              </div>
-              <div class="search-form">
-                <form role="search" method="get" id="searchform" action="">
-                  <input type="search" id="searchForm" name="query" placeholder="search">
-                  <button class="search-button">
-                    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div class="toggle">
-              <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
+          <div class="header-bottom" data-sticky-container>
+            <div class="navbar sticky" data-sticky data-margin-top="0" data-top-anchor="branding:bottom">
+              <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Facilities</a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="header-bottom" data-sticky-container>
-          <div class="navbar sticky" data-sticky data-margin-top="0" data-top-anchor="branding:bottom">
-            <ul class="nav">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Facilities</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </header>
 
       <div class="qd-slider" role="region" aria-label="UW MEM-C Headline Photos" data-orbit>
         <div class="qd-slider-controls">
@@ -139,10 +141,10 @@
                 A new research center at the University of Washington, Seattle
                 opens its doors today! This center has two central research
                 obejctives: (1) two-dimensional nanomaterials and (2) colloidal
-                quantum dots. A new research center at the University of Washington, Seattle
-                opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
-                quantum dots.
+                quantum dots. A new research center at the University of
+                Washington, Seattle opens its doors today! This center has two
+                central research obejctives: (1) two-dimensional nanomaterials
+                and (2) colloidal quantum dots.
               </div>
             </div>
           </div>
@@ -190,15 +192,72 @@
                 A new research center at the University of Washington, Seattle
                 opens its doors today! This center has two central research
                 obejctives: (1) two-dimensional nanomaterials and (2) colloidal
-                quantum dots. A new research center at the University of Washington, Seattle
-                opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
-                quantum dots.
+                quantum dots. A new research center at the University of
+                Washington, Seattle opens its doors today! This center has two
+                central research obejctives: (1) two-dimensional nanomaterials
+                and (2) colloidal quantum dots.
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="gallery">
+        <div class="gallery-background"></div>
+        <div class="gallery-content">
+          <h1>Team</h1>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer">
+          <div class="footer-container">
+            <div class="footer-section">
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Facilities</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Sponsors</h3>
+              <a href="https://www.nsf.gov" target="_blank">
+                <img src="img/sponsors/nsf-logo.png" alt="NSF Logo" class="sponsor nsf" >
+              </a>
+              <a href="https://www.mrsec.org/" target="_blank">
+                <img src="img/sponsors/mrsec-logo.png" alt="MRSEC Logo" class="sponsor mrsec">
+              </a>
+            </div>
+            <div class="footer-section">
+              <img class="logo" src="img/branding/uwmemc-logo-white.png" alt="UW MEM-C Logo">
+              <div class="address">
+                Molecular Engineering and Materials Center<br/>
+                Box 351700<br/>
+                Department of Chemistry<br/>
+                University of Washington<br/>
+                36 Bagley Hall<br/>
+                Seattle, WA 98195-XXXX<br/>
+                P: (206) XXX-XXXX<br/>
+                F: (206) XXX-XXXX<br/>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              &copy; 2017 <a href="http://www.psistardesigns.com" target="_blank">Psi Star Designs</a>
+              <span class="spacer">|</span>
+              <a href="#">Contact</a>
+              <span class="spacer">&middot;</span>
+              <a href="#">Privacy</a>
+              <span class="spacer">&middot;</span>
+              <a href="#">Site Map</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
