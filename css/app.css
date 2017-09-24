@@ -7350,7 +7350,7 @@ h1 {
     .qd-slider {
       margin-bottom: 98px; }
       .qd-slider .qd-slider-background {
-        background-image: url("/img/gallery-background.png");
+        background-image: url("https://rawgit.com/jwmay/uwmemc/master/img/gallery-background.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -7416,7 +7416,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/banner-background.png");
+  background-image: url("https://rawgit.com/jwmay/uwmemc/master/img/banner-background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7603,7 +7603,7 @@ h1 {
   top: -90px;
   z-index: -1; }
   .gallery .gallery-background {
-    background-image: url("/img/gallery-background.png");
+    background-image: url("https://rawgit.com/jwmay/uwmemc/master/img/gallery-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

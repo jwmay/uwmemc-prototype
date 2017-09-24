@@ -23,7 +23,7 @@ $banner-height-large: $banner-bubble-diameter - $banner-bubble-overhang * 2;
 .banner {
   display: flex;
   align-items: center;
-  background-image: url('/img/banner-background.png');
+  background-image: url('https://rawgit.com/jwmay/uwmemc/master/img/banner-background.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
