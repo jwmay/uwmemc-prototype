@@ -7030,13 +7030,17 @@ a.thumbnail {
       padding-right: 0.9375rem;
       padding-left: 0.9375rem; } }
 
-h1 {
+.h1 {
+  font-size: 3rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 7px;
   text-align: center;
   margin-bottom: 21px;
   width: 100%; }
+  @media print, screen and (min-width: 64em) {
+    .h1 {
+      font-size: 4rem; } }
 
 .header {
   position: relative;
@@ -7403,7 +7407,7 @@ h1 {
     .qd-slider .qd-slider-left {
       left: 4%; }
     .qd-slider .qd-slider-right {
-      right: 4%; }
+      right: -4%; }
     .qd-slider .qd-slider-next {
       right: 27%; }
     .qd-slider .qd-slider-previous {
@@ -7417,10 +7421,6 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("https://rawgit.com/jwmay/uwmemc/master/img/banner-background.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
   height: 1162px; }
   .banner .banner-content {
@@ -7456,8 +7456,7 @@ h1 {
       width: 294px;
       height: 294px;
       padding: 42px;
-      border-radius: 100%;
-      opacity: 0.9; }
+      border-radius: 100%; }
       .banner .banner-content .bubble p {
         margin: 0;
         color: #fefefe;
@@ -7483,12 +7482,18 @@ h1 {
   @media print, screen and (min-width: 64em) {
     .banner {
       height: 210px;
-      margin: 42px 0; }
+      margin: 42px 0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
       .banner .banner-content {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-flow: row nowrap;
-                flex-flow: row nowrap; } }
+                flex-flow: row nowrap; }
+        .banner .banner-content .bubble {
+          opacity: 0.9; } }
 
 .jumbotron {
   background-color: #20559e;
@@ -7549,7 +7554,8 @@ h1 {
       border-radius: 0 400px 400px 0;
       padding: 21px;
       padding-right: 91px;
-      max-height: 210px; }
+      max-height: 210px;
+      margin-bottom: 35px; }
       .jumbotron .jumbotron-content .item > :last-child {
         margin-bottom: 0; }
       .jumbotron .jumbotron-content .item .item-content {
@@ -7634,8 +7640,8 @@ h1 {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
   .gallery .gallery-item {
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     padding: 28px;
     background-color: #fefefe;
     border-radius: 100%;
@@ -7660,10 +7666,11 @@ h1 {
       margin-bottom: 0; }
     .gallery .gallery-item .portrait {
       border-radius: 100%;
-      height: 168px; }
+      height: 140px; }
     .gallery .gallery-item .name {
       margin-top: 14px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 1.4rem; }
     .gallery .gallery-item .title {
       color: #696969;
       line-height: 1.2; }
@@ -7672,11 +7679,18 @@ h1 {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
     .gallery .gallery-item .name {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
   @media print, screen and (min-width: 64em) {
     .gallery {
       top: -60px;
-      margin-bottom: -140px; } }
+      margin-bottom: -140px; }
+      .gallery .gallery-item {
+        width: 360px;
+        height: 360px; }
+        .gallery .gallery-item .portrait {
+          height: 168px; }
+        .gallery .gallery-item .name {
+          font-size: 1.8rem; } }
 
 .footer {
   background-color: #4b2e83;

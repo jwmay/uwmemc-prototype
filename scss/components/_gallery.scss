@@ -28,8 +28,8 @@
   }
   
   .gallery-item {
-    width: 360px;
-    height: 360px;
+    width: 320px;
+    height: 320px;
     padding: 4 * $spacer;
     background-color: $white;
     border-radius: 100%;
@@ -47,12 +47,13 @@
 
     .portrait {
       border-radius: 100%;
-      height: 24 * $spacer;
+      height: 20 * $spacer;
     }
 
     .name {
       margin-top: 2 * $spacer;
       margin-bottom: 0;
+      font-size: 1.4rem;
     }
 
     .title {
@@ -73,7 +74,7 @@
     .gallery-item {
 
       .name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -84,5 +85,18 @@
   @include breakpoint(large) {
     top: -60px;
     margin-bottom: -140px;
+
+    .gallery-item {
+      width: 360px;
+      height: 360px;
+
+      .portrait {
+        height: 24 * $spacer;
+      }
+
+      .name {
+        font-size: 1.8rem;
+      }
+    }
   }
 }
