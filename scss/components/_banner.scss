@@ -24,10 +24,6 @@ $banner-height-large: $banner-bubble-diameter - $banner-bubble-overhang * 2;
   display: flex;
   align-items: center;
   background-image: url('https://rawgit.com/jwmay/uwmemc/master/img/banner-background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
 
   .banner-content {
@@ -44,7 +40,6 @@ $banner-height-large: $banner-bubble-diameter - $banner-bubble-overhang * 2;
       height: $banner-bubble-diameter;
       padding: $banner-bubble-padding;
       border-radius: 100%;
-      opacity: 0.9;
 
       p {
         margin: 0;
@@ -88,9 +83,17 @@ $banner-height-large: $banner-bubble-diameter - $banner-bubble-overhang * 2;
   @include breakpoint(large) {
     height: $banner-height-large;
     margin: $banner-bubble-overhang 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     .banner-content {
       flex-flow: row nowrap;
+
+      .bubble {
+        opacity: 0.9;
+      }
     }
   }
 }
