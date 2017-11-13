@@ -1,0 +1,24 @@
+////
+// Parallax effects.
+////
+
+// Create a background image with parallax effect. The parallax effect does not
+// work on iOS devices (and most mobile devices due to performance issues) so
+// the effect is disabled on mobile and enabled on large display sizes.
+@mixin -parallax-background($url, $opacity: 1) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: $opacity;
+  z-index: -1;
+
+  // Enable parallax effect on large display sizes.
+  @include breakpoint(large) {
+    background-attachment: fixed;
+  }
+}

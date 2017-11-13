@@ -1,0 +1,78 @@
+////
+// Headline Styles
+////
+@mixin -headline-shift($shift) {
+  $shift-size: -($base * $shift);
+  top: $shift-size;
+  margin-bottom: $shift-size;
+}
+
+.headline {
+  position: relative;
+  @include -headline-shift(14);
+
+  @include breakpoint(medium) {
+    @include -headline-shift(18);
+  }
+
+  @include breakpoint(large) {
+    @include -headline-shift(22);
+  }
+
+  @include breakpoint(xlarge) {
+    @include -headline-shift(28);
+  }
+
+  .headline-background {
+    @include -parallax-background($solar-panel-image, 0.2);
+  }
+
+  .headline-slider-reel {
+    @include container;
+    padding: ($base * 6) ($base * 3);
+
+    @include breakpoint(medium) {
+      width: 80%;
+    }
+
+    @include breakpoint(xlarge) {
+      width: 50%;
+    }
+
+    @include breakpoint(xxlarge) {
+      width: 40%;
+    }
+
+    .headline-slider {
+      @include dot-slider;
+
+      .headline-slider-container {
+        @include dot-slider-container;
+      }
+
+      .headline-slider-slide {
+        @include dot-slider-slide;
+      }
+
+      .headline-slider-image {
+        @include dot-slider-image;
+      }
+
+      .headline-slider-caption {
+        @include dot-slider-caption;
+      }
+
+      .headline-slider-next {
+        @include dot-slider-next;
+      }
+
+      .headline-slider-previous {
+        @include dot-slider-previous;
+      }
+
+      .headline-slider-bullets {
+        @include dot-slider-bullets;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+////
+// News Gallery Styles
+////
+.gallery-news {
+  @include gallery;
+  background-color: $secondary-color;
+  border-radius: 0 0 100% 100%;
+  position: relative;
+  width: 200%;
+  left: -50%;
+
+  .gallery-news-container {
+    @include gallery-container;
+    width: cell-size(1/2); // correct for the 200% width on .gallery-news parent
+    padding-bottom: ($base * 15);
+  }
+
+  .gallery-news-title {
+    @include gallery-title;
+    color: $white;
+  }
+
+  .gallery-news-item {
+    @include gallery-tile;
+  }
+
+  .news-item-content {
+    @include tile-container;
+  }
+
+  .news-item-header {
+    @include tile-header;
+  }
+
+  .news-item-body {
+    @include tile-content;
+  }
+
+  .news-item-date {
+    @include tile-tag;
+  }
+
+  .date {
+    @include date;
+
+    .date-month {
+      @include date-month;
+    }
+
+    .date-day {
+      @include date-day;
+    }
+  }
+}

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UW MEM&middot;C</title>
     <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div class="side-menu-container off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
@@ -23,18 +23,18 @@
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      <header>
-        <div class="header">
-          <div class="header-top" id="branding">
+      <header class="header">
+        <div class="header-top" id="branding">
+          <div class="header-top-container">
             <div class="header-left">
               <div class="logo">
-                <a href="#">
+                <a href="https://jwmay.github.io/uwmemc/">
                   <img src="img/branding/uwmemc-logo.png" alt="UW MEM-C Logo">
                 </a>
               </div>
             </div>
             <div class="header-right">
-              <div class="search">
+              <div class="header-search">
                 <div class="search-toggle" id="searchToggle">
                   <i class="fa fa-search fa-lg" aria-hidden="true"></i>
                 </div>
@@ -47,271 +47,287 @@
                   </form>
                 </div>
               </div>
-              <div class="toggle">
+              <div class="header-toggle">
                 <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
               </div>
             </div>
           </div>
-          <div class="header-bottom" data-sticky-container>
-            <div class="navbar sticky" data-sticky data-margin-top="0" data-top-anchor="branding:bottom">
-              <ul class="nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Facilities</a></li>
-              </ul>
-            </div>
+        </div>
+        <div class="header-bottom" data-sticky-container>
+          <div class="navbar sticky" data-sticky data-margin-top="0" data-top-anchor="branding:bottom">
+            <ul class="nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Facilities</a></li>
+            </ul>
           </div>
         </div>
       </header>
 
-      <div class="qd-slider" role="region" aria-label="UW MEM-C Headline Photos" data-orbit>
-        <div class="qd-slider-background"></div>
-        <div class="qd-slider-controls">
-          <button class="qd-slider-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-          <button class="qd-slider-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      <div class="headline">
+        <div class="headline-background"></div>
+        <div class="headline-slider-reel">
+          <div class="headline-slider" role="region" aria-label="UW MEM-C Headline Photos">
+            <div class="headline-slider-controls">
+              <button class="headline-slider-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+              <button class="headline-slider-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            </div>
+            <ul class="headline-slider-container">
+              <li class="headline-slider-slide is-active">
+                <img class="headline-slider-image" src="img/orbit/01.png" alt="Space">
+                <div class="headline-slider-caption">
+                  <h5>A scientist doing work</h5>
+                </div>
+              </li>
+              <li class="headline-slider-slide">
+                <img class="headline-slider-image" src="img/orbit/02.png" alt="Space">
+                <div class="headline-slider-caption">
+                  <h5>A lab in operation</h5>
+                </div>
+              </li>
+              <li class="headline-slider-slide">
+                <img class="headline-slider-image" src="img/orbit/03.png" alt="Space">
+                <div class="headline-slider-caption">
+                  <h5>Another MEMC&middot;C lab</h5>
+                </div>
+              </li>
+            </ul>
+            <nav class="headline-slider-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            </nav>
+          </div>
         </div>
-        <div class='qd-slider-left'>
-          <img src="img/orbit/03.png" alt="Space">
-        </div>
-        <div class='qd-slider-right'>
-          <img src="img/orbit/02.png" alt="Space">
-        </div>
-        <ul class="qd-slider-container">
-          <li class="qd-slider-slide is-active">
-            <img class="qd-slider-image" src="img/orbit/01.png" alt="Space">
-          </li>
-          <li class="qd-slider-slide">
-            <img class="qd-slider-image" src="img/orbit/02.png" alt="Space">
-          </li>
-          <li class="qd-slider-slide">
-            <img class="qd-slider-image" src="img/orbit/03.png" alt="Space">
-          </li>
-        </ul>
-        <nav class="qd-slider-bullets">
-          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-        </nav>
       </div>
 
-      <div class="banner">
-        <div class="banner-content">
+      <div class="research-banner">
+        <div class="research-banner-container">
           <div class="bubble bubble-green">
-            <p>A blurb about research</p>
+            <p class="bubble-content">A blurb about research</p>
           </div>
           <div class="bubble bubble-blue">
-            <p>A blurb about research</p>
+            <p class="bubble-content">A blurb about research</p>
           </div>
           <div class="bubble bubble-purple">
-            <p>A blurb about research</p>
+            <p class="bubble-content">A blurb about research</p>
           </div>
         </div>
       </div>
 
-      <div class="jumbotron">
-        <div class="jumbotron-content">
-          <h1 class="h1">News</h1>
-          <div class="item">
-            <div class="item-content">
+      <div class="gallery-news">
+        <div class="gallery-news-container">
+          <h1 class="gallery-news-title">News</h1>
+          <div class="gallery-news-item">
+            <div class="news-item-date">
               <div class="date">
-                Saturday, September 9, 2017
+                <div class="date-month">Nov</div>
+                <div class="date-day">20</div>
               </div>
-              <h4>
+            </div>
+            <div class="news-item-content">
+              <h6 class="news-item-header">
                 <a href="#">UW MEM-C debuts online</a>
-              </h4>
-              <div class="excerpt">
+              </h6>
+              <p class="news-item-body">
                 A new research center at the University of Washington, Seattle
                 opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
+                obejctives: two-dimensional nanomaterials and colloidal
                 quantum dots.
-              </div>
+              </p>
             </div>
           </div>
-          <div class="item">
-            <div class="item-content">
+          <div class="gallery-news-item">
+            <div class="news-item-date">
               <div class="date">
-                Saturday, September 9, 2017
-              </div>
-              <h4>
-                <a href="#">This is a really long headline for a new story</a>
-              </h4>
-              <div class="excerpt">
-                A new research center at the University of Washington, Seattle
-                opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
-                quantum dots. A new research center at the University of
-                Washington, Seattle opens its doors today! This center has two
-                central research obejctives: (1) two-dimensional nanomaterials
-                and (2) colloidal quantum dots.
+                <div class="date-month">Nov</div>
+                <div class="date-day">20</div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="item-content">
-              <div class="date">
-                Saturday, September 9, 2017
-              </div>
-              <h4>
+            <div class="news-item-content">
+              <h6 class="news-item-header">
                 <a href="#">UW MEM-C debuts online</a>
-              </h4>
-              <div class="excerpt">
+              </h6>
+              <p class="news-item-body">
                 A new research center at the University of Washington, Seattle
                 opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
+                obejctives: two-dimensional nanomaterials and colloidal
                 quantum dots.
-              </div>
+              </p>
             </div>
           </div>
-          <div class="item">
-            <div class="item-content">
+          <div class="gallery-news-item">
+            <div class="news-item-date">
               <div class="date">
-                Saturday, September 9, 2017
+                <div class="date-month">Nov</div>
+                <div class="date-day">20</div>
               </div>
-              <h4>
+            </div>
+            <div class="news-item-content">
+              <h6 class="news-item-header">
                 <a href="#">UW MEM-C debuts online</a>
-              </h4>
-              <div class="excerpt">
+              </h6>
+              <p class="news-item-body">
                 A new research center at the University of Washington, Seattle
                 opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
+                obejctives: two-dimensional nanomaterials and colloidal
                 quantum dots.
-              </div>
+              </p>
             </div>
           </div>
-          <div class="item">
-            <div class="item-content">
+          <div class="gallery-news-item">
+            <div class="news-item-date">
               <div class="date">
-                Saturday, September 9, 2017
+                <div class="date-month">Nov</div>
+                <div class="date-day">20</div>
               </div>
-              <h4>
-                <a href="#">This is a really long headline for a new story</a>
-              </h4>
-              <div class="excerpt">
+            </div>
+            <div class="news-item-content">
+              <h6 class="news-item-header">
+                <a href="#">UW MEM-C debuts online</a>
+              </h6>
+              <p class="news-item-body">
                 A new research center at the University of Washington, Seattle
                 opens its doors today! This center has two central research
-                obejctives: (1) two-dimensional nanomaterials and (2) colloidal
-                quantum dots. A new research center at the University of
-                Washington, Seattle opens its doors today! This center has two
-                central research obejctives: (1) two-dimensional nanomaterials
-                and (2) colloidal quantum dots.
+                obejctives: two-dimensional nanomaterials and colloidal
+                quantum dots.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-news-item">
+            <div class="news-item-date">
+              <div class="date">
+                <div class="date-month">Nov</div>
+                <div class="date-day">20</div>
               </div>
+            </div>
+            <div class="news-item-content">
+              <h6 class="news-item-header">
+                <a href="#">UW MEM-C debuts online</a>
+              </h6>
+              <p class="news-item-body">
+                A new research center at the University of Washington, Seattle
+                opens its doors today! This center has two central research
+                obejctives: two-dimensional nanomaterials and colloidal
+                quantum dots.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="gallery">
-        <div class="gallery-background"></div>
-        <div class="gallery-content">
-          <h1 class="h1">Team</h1>
-          <div class="gallery-item">
-            <img src="img/team/gamelin.jpg" alt="Daniel Gamelin" class="portrait">
-            <h2 class="name">Daniel Gamelin</h2>
-            <p class="title">
+      <div class="gallery-team">
+        <div class="gallery-team-background"></div>
+        <div class="gallery-team-container">
+          <h1 class="gallery-team-title">Team</h1>
+          <div class="gallery-team-member">
+            <img src="img/team/gamelin.jpg" alt="Daniel Gamelin" class="team-member-portrait">
+            <h2 class="team-member-name">Daniel Gamelin</h2>
+            <p class="team-member-title">
               Director<br>
               IRG 1 Lead
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/luscombe.jpg" alt="Christine Luscombe" class="portrait">
-            <h2 class="name">Christine Luscombe</h2>
-            <p class="title">
-              Exec. Dir. of Education/Outreach<br>
+          <div class="gallery-team-member">
+            <img src="img/team/luscombe.jpg" alt="Christine Luscombe" class="team-member-portrait">
+            <h2 class="team-member-name">Christine Luscombe</h2>
+            <p class="team-member-title">
+              Exec. Dir. of Edu./Outreach<br>
               IRG 1 Co-Lead
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/xu.jpg" alt="Xiaodong Xu" class="portrait">
-            <h2 class="name">Xiaodong Xu</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/xu.jpg" alt="Xiaodong Xu" class="team-member-portrait">
+            <h2 class="team-member-name">Xiaodong Xu</h2>
+            <p class="team-member-title">
               IRG 2 Lead
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/fu.jpg" alt="Kai-Mei Fu" class="portrait">
-            <h2 class="name">Kai-Mei Fu</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/fu.jpg" alt="Kai-Mei Fu" class="team-member-portrait">
+            <h2 class="team-member-name">Kai-Mei Fu</h2>
+            <p class="team-member-title">
               IRG 2 Co-Lead
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/cossairt.jpg" alt="Brandi Cossairt" class="portrait">
-            <h2 class="name">Brandi Cossairt</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/cossairt.jpg" alt="Brandi Cossairt" class="team-member-portrait">
+            <h2 class="team-member-name">Brandi Cossairt</h2>
+            <p class="team-member-title">
               IRG 1
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/deyoreo.jpg" alt="Jim DeYoreo" class="portrait">
-            <h2 class="name">Jim DeYoreo</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/deyoreo.jpg" alt="Jim DeYoreo" class="team-member-portrait">
+            <h2 class="team-member-name">Jim DeYoreo</h2>
+            <p class="team-member-title">
               IRG 1
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/dunham.jpg" alt="Scott Dunham" class="portrait">
-            <h2 class="name">Scott Dunham</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/dunham.jpg" alt="Scott Dunham" class="team-member-portrait">
+            <h2 class="team-member-name">Scott Dunham</h2>
+            <p class="team-member-title">
               IRG 1
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/hillhouse.jpg" alt="Hugh Hillhouse" class="portrait">
-            <h2 class="name">Hugh Hillhouse</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/hillhouse.jpg" alt="Hugh Hillhouse" class="team-member-portrait">
+            <h2 class="team-member-name">Hugh Hillhouse</h2>
+            <p class="team-member-title">
               IRG 1
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/holmberg.jpg" alt="Vincent Holmberg" class="portrait">
-            <h2 class="name">Vincent Holmberg</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/holmberg.jpg" alt="Vincent Holmberg" class="team-member-portrait">
+            <h2 class="team-member-name">Vincent Holmberg</h2>
+            <p class="team-member-title">
               IRG 1
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/pauzauskie.jpg" alt="Peter Pauzauskie" class="portrait">
-            <h2 class="name">Peter Pauzauskie</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/pauzauskie.jpg" alt="Peter Pauzauskie" class="team-member-portrait">
+            <h2 class="team-member-name">Peter Pauzauskie</h2>
+            <p class="team-member-title">
               IRG 1
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/andreev.jpg" alt="Anton Andreev" class="portrait">
-            <h2 class="name">Anton Andreev</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/andreev.jpg" alt="Anton Andreev" class="team-member-portrait">
+            <h2 class="team-member-name">Anton Andreev</h2>
+            <p class="team-member-title">
               IRG 2
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/chu.jpg" alt="Jiun-Haw Chu" class="portrait">
-            <h2 class="name">Jiun-Haw Chu</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/chu.jpg" alt="Jiun-Haw Chu" class="team-member-portrait">
+            <h2 class="team-member-name">Jiun-Haw Chu</h2>
+            <p class="team-member-title">
               IRG 2
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/cobden.jpg" alt="David Cobden" class="portrait">
-            <h2 class="name">David Cobden</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/cobden.jpg" alt="David Cobden" class="team-member-portrait">
+            <h2 class="team-member-name">David Cobden</h2>
+            <p class="team-member-title">
               IRG 2
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/li.jpg" alt="Xiaosong Li" class="portrait">
-            <h2 class="name">Xiaosong Li</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/li.jpg" alt="Xiaosong Li" class="team-member-portrait">
+            <h2 class="team-member-name">Xiaosong Li</h2>
+            <p class="team-member-title">
               IRG 2
             </p>
           </div>
-          <div class="gallery-item">
-            <img src="img/team/yang.jpg" alt="Jihui Yang" class="portrait">
-            <h2 class="name">Jihui Yang</h2>
-            <p class="title">
+          <div class="gallery-team-member">
+            <img src="img/team/yang.jpg" alt="Jihui Yang" class="team-member-portrait">
+            <h2 class="team-member-name">Jihui Yang</h2>
+            <p class="team-member-title">
               IRG 2
             </p>
           </div>
@@ -333,7 +349,7 @@
                 <li><a href="#">Facilities</a></li>
               </ul>
             </div>
-            <div class="footer-section">
+            <div class="footer-section sponsor-section">
               <h3>Sponsors</h3>
               <a href="https://www.nsf.gov" target="_blank">
                 <img src="img/sponsors/nsf-logo.png" alt="NSF Logo" class="sponsor nsf" >
@@ -342,7 +358,7 @@
                 <img src="img/sponsors/mrsec-logo.png" alt="MRSEC Logo" class="sponsor mrsec">
               </a>
             </div>
-            <div class="footer-section">
+            <div class="footer-section contact-section">
               <img class="logo" src="img/branding/uwmemc-logo-white.png" alt="UW MEM-C Logo">
               <div class="address">
                 Molecular Engineering and Materials Center<br/>

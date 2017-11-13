@@ -1,0 +1,59 @@
+/// Hide horizontal overflow content.
+.off-canvas-content {
+  overflow-x: hidden;
+}
+
+
+////
+// Side Menu : Base Styles
+////
+.side-menu-container {
+  border-radius: 1000px 0 0 1000px;
+  padding-right: ($base * 2);
+  text-align: right;
+
+  li a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-size: ($base * 3);
+    margin-bottom: ($base / 2);
+    padding: 6px 0;
+    
+    @include breakpoint(medium) {
+      font-size: ($base * 3);
+      margin-bottom: $base;
+      padding: 8px 0;
+    }
+
+    &:hover {
+      color: $alert-color;
+      padding-bottom: 4px;
+    }
+  }
+
+  ////
+  // Side Menu : Small Display Styles
+  ////
+  @include breakpoint(small) {
+    top: -50px;
+    height: 480px;
+    padding-top: 130px;
+    padding-left: 90px;
+  }
+
+  ////
+  // Side Menu : Medium Display Styles
+  ////
+  @include breakpoint(medium) {
+    top: -80px;
+    height: 600px;
+    padding-top: 180px;
+    padding-left: 80px;
+  }
+}
+
+/// Decrease opacity of off-canvas overlay.
+.js-off-canvas-overlay {
+  background: rgba(254, 254, 254, 0.85);
+}

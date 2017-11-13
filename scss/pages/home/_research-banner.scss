@@ -1,0 +1,59 @@
+////
+// Research Banner Styles
+////
+.research-banner {
+  @include banner(
+    $processor-image,
+    $research-banner-bubble-diameter-large,
+    ($base * 6)
+  );
+
+  @include breakpoint(large) {
+    margin: ($base * 18) 0;
+  }
+
+  .research-banner-container {
+    @include banner-container;
+
+    .bubble {
+      @include bubble(
+        $research-banner-bubble-diameter-small,
+        ($base * 5),
+        ($base * 3)
+      );
+      
+      // Increase the size of bubble on xlarge displays.
+      @include breakpoint(xlarge) {
+        @include bubble(
+          $research-banner-bubble-diameter-large,
+          ($base * 6),
+          ($base * 4)
+        );
+      }
+    }
+
+    .bubble-content {
+      @include bubble-content;
+      font-style: italic;
+      font-size: 1.4rem;
+      line-height: 1.4;
+
+      @include breakpoint(xlarge) {
+        font-size: 1.8rem;
+        line-height: 1.4;
+      }
+    }
+
+    .bubble-green {
+      background-color: $success-color;
+    }
+
+    .bubble-blue {
+      background-color: $secondary-color;
+    }
+
+    .bubble-purple {
+      background-color: $primary-color;
+    }
+  }
+}

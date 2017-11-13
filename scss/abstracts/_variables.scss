@@ -1,0 +1,24 @@
+////
+// Custom Variables
+////
+
+// Base unit upon which all sizing and spacing is based.
+$base-unit: 8;
+
+// Base pixel size upon which all sizing and spacing is based.
+$base: 8px;
+
+// Max width of the centered page container.
+$grid-container: rem-calc(150 * $base);
+
+
+// Diameter of the research banner bubbles.
+$research-banner-bubble-diameter-small: ($base * 36);
+$research-banner-bubble-diameter-large: ($base * 42);
+
+
+// Solar panel background image.
+$solar-panel-image: 'https://rawgit.com/jwmay/uwmemc/master/img/gallery-background.png';
+
+// Processor background image.
+$processor-image: 'https://rawgit.com/jwmay/uwmemc/master/img/banner-background.png';

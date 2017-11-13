@@ -1,0 +1,63 @@
+////
+// Animation keyframes.
+////
+
+// Animation keyframes for the rainbow effect
+// on the background color of an element.
+@keyframes multicolorBackground {
+  0% {
+    background-color: $primary-color;
+  }
+  25% {
+    background-color: $secondary-color;
+  }
+  50% {
+    background-color: $success-color;
+  }
+  75% {
+    background-color: $warning-color;
+  }
+  100% {
+    background-color: $alert-color;
+  }
+}
+
+// Animation keyframes for the rainbow effect
+// on the text color of an element.
+@keyframes multicolorText {
+  0% {
+    color: $primary-color;
+  }
+  25% {
+    color: $secondary-color;
+  }
+  50% {
+    color: $success-color;
+  }
+  75% {
+    color: $warning-color;
+  }
+  100% {
+    color: $alert-color;
+  }
+}
+
+// Animation keyframes for the rainbow effect
+// on the border color of an element.
+@keyframes multicolorBorder {
+  0% {
+    border-color: $primary-color;
+  }
+  25% {
+    border-color: $secondary-color;
+  }
+  50% {
+    border-color: $success-color;
+  }
+  75% {
+    border-color: $warning-color;
+  }
+  100% {
+    border-color: $alert-color;
+  }
+}

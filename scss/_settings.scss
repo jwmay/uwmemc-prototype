@@ -66,7 +66,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1400); // custom
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #4b2e83, // custom
@@ -88,7 +88,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
-$global-weight-bold: 500; // custom
+$global-weight-bold: 600; // custom
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
@@ -108,8 +108,8 @@ $breakpoints: (
   small: 0,
   medium: 640px,
   large: 1024px,
-  xlarge: 1600px, // custom
-  xxlarge: 2000px, // custom
+  xlarge: 1400px, // custom
+  xxlarge: 1800px, // custom
 );
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large);
@@ -131,7 +131,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-bold; // custom
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;

@@ -1,0 +1,43 @@
+////
+// Team Member Gallery Styles
+////
+.gallery-team {
+  @include gallery;
+  top: -($base * 15);
+  margin-bottom: -($base * 30);
+  
+  .gallery-team-background {
+    @include gallery-background-img($solar-panel-image);
+  }
+
+  .gallery-team-container {
+    @include gallery-container;
+    padding: ($base * 15) 0;
+  }
+
+  .gallery-team-title {
+    @include gallery-title;
+  }
+
+  .gallery-team-member {
+    @include gallery-dot(38);
+
+    @include breakpoint(xlarge) {
+      width: ($base * 42);
+      height: ($base * 42);
+    }
+  }
+
+  .team-member-portrait {
+    @include gallery-dot-img(20);
+  }
+
+  .team-member-name {
+    @include gallery-dot-header;
+  }
+
+  .team-member-title {
+    @include gallery-dot-subheader;
+    font-size: ($base * 2);
+  }
+}

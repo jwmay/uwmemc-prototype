@@ -1,102 +1,170 @@
 ////
-// Galler : Base Styles
+// Gallery : Base Styles
 ////
-.gallery {
+
+// Generate the container to hold the gallery.
+@mixin gallery {
   position: relative;
-  margin-bottom: -180px;
-  top: -90px;
-  z-index: -1;
+}
 
-  .gallery-background {
-    background-image: url('https://rawgit.com/jwmay/uwmemc/master/img/gallery-background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.2;
-    z-index: -1;
-  }
+// Generate a fixed background image for the gallery.
+@mixin gallery-background-img($url) {
+  @include -parallax-background($url, 0.2);
+}
 
-  .gallery-content {
-    @include xy-grid-container;
-    @include xy-grid;
-    padding: 20 * $spacer 0;
-    justify-content: center;
-  }
-  
-  .gallery-item {
-    width: 320px;
-    height: 320px;
-    padding: 4 * $spacer;
-    background-color: $white;
-    border-radius: 100%;
-    margin-bottom: 5 * $spacer;
-    text-align: center;
-    box-shadow: 3px 3px 10px 3px #aaa;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+// Generate the main container of the gallery content.
+@mixin gallery-container {
+  @include container;
+  @include grid;
+  justify-content: space-evenly;
+}
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+// Generate a title for the gallery.
+@mixin gallery-title {
+  text-align: center;
+  width: 100%;
+}
 
-    .portrait {
-      border-radius: 100%;
-      height: 20 * $spacer;
-    }
 
-    .name {
-      margin-top: 2 * $spacer;
-      margin-bottom: 0;
-      font-size: 1.4rem;
-    }
+////
+// Gallery-Dot : Base Styles
+////
 
-    .title {
-      color: $dark-gray;
-      line-height: 1.2;
-    }
-  }
+// Generate a gallery-dot item.
+@mixin gallery-dot($size) {
+  width: ($base * $size);
+  height: ($base * $size);
+  padding: ($base * 4);
+  margin-bottom: ($base * 7);
+  background-color: $white;
+  border-radius: 100%;
+  box-shadow: 3px 3px 10px 3px $medium-gray;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
 
-  ////
-  // Gallery : Medium Dispaly Styles
-  ////
+// Generate a gallery-dot item image.
+@mixin gallery-dot-img($size) {
+  border-radius: 100%;
+  height: ($base * $size);
+}
+
+// Generate a gallery-dot header.
+@mixin gallery-dot-header {
+  margin-top: ($base * 2);
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
+// Generate a gallery-dot subheader.
+@mixin gallery-dot-subheader {
+  color: $dark-gray;
+  line-height: 1.2;
+}
+
+
+////
+// Gallery-Tile : Base Styles
+////
+
+// Generate a gallery-tile item.
+@mixin gallery-tile {
+  $sizes: ('small': 12, 'large': 6);
+  $gutter: ($base * 5);
+  @include cell($sizes, $gutter);
+  margin-bottom: ($gutter / 2);
+  position: relative;
+  height: ($base * 24);
+
   @include breakpoint(medium) {
-
-    .gallery-content {
-      justify-content: space-around;
-    }
-
-    .gallery-item {
-
-      .name {
-        font-size: 1.6rem;
-      }
-    }
+    height: ($base * 32);
+    margin-bottom: $gutter;
   }
+}
+
+// Generate a gallery-tile container.
+@mixin tile-container {
+  background-color: $white;
+  width: 70%;
+  height: 100%;
+  float: left;
+  overflow-y: hidden;
+  padding: ($base * 3) 0 0 ($base * 3);
+  border-bottom: ($base * 3) solid $white; // to hide overflow text
+}
+
+// Generate a gallery-tile header.
+@mixin tile-header {
+  margin: $base 0;
+  font-size: ($base * 2.2);
+  line-height: ($base * 3.2);
+
+  @include breakpoint(medium) {
+    font-size: ($base * 3);
+    line-height: ($base * 4);
+  }
+}
+
+// Generate a gallery-tile content container.
+@mixin tile-content {
+  line-height: ($base * 3.2);
+
+  @include breakpoint(medium) {
+    line-height: ($base * 4);
+  }
+}
+
+// Generate a gallery-tile tag.
+@mixin tile-tag {
+  border-radius: 0 1000px 1000px 0;
+  background-color: $white;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  float: right;
+}
+
+// Generate a date display container.
+@mixin date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+// Generate the date display month.
+@mixin date-month {
+  text-transform: uppercase;
+  font-weight: $global-weight-bold;
+  font-size: ($base * 2);
+
+  @include breakpoint(medium) {
+    font-size: ($base * 4);
+  }
+}
+
+// Generate the date display day.
+@mixin date-day {
+  background-color: $warning-color;
+  border-radius: 100%;
+  color: $white;
+  text-align: center;
+  font-weight: $global-weight-bold;
+  width: ($base * 6);
+  height: ($base * 6);
+  line-height: ($base * 6);
+  font-size: ($base * 3);
   
-  ////
-  // Gallery : Large Dispaly Styles
-  ////
-  @include breakpoint(large) {
-    top: -60px;
-    margin-bottom: -140px;
-
-    .gallery-item {
-      width: 360px;
-      height: 360px;
-
-      .portrait {
-        height: 24 * $spacer;
-      }
-
-      .name {
-        font-size: 1.8rem;
-      }
-    }
+  @include breakpoint(medium) {
+    width: ($base * 10);
+    height: ($base * 10);
+    line-height: ($base * 10);
+    font-size: ($base * 5);
   }
 }
