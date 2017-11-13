@@ -34,13 +34,22 @@
 
     .bubble-content {
       @include bubble-content;
-      font-style: italic;
-      font-size: 1.4rem;
-      line-height: 1.4;
 
-      @include breakpoint(xlarge) {
-        font-size: 1.8rem;
-        line-height: 1.4;
+      h3,
+      h6 {
+        color: $white;
+        margin: 0;
+      }
+
+      h6 {
+        color: $warning-color;
+      }
+
+      p {
+        margin: 0;
+        margin-top: $base;
+        line-height: 1.2;
+        font-style: italic;
       }
     }
 
