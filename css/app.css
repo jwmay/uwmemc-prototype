@@ -7019,29 +7019,6 @@ a.thumbnail {
 .off-canvas-content {
   overflow-x: hidden; }
 
-.full-width-container {
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 0 !important; }
-  @media print, screen and (min-width: 40em) {
-    .full-width-container {
-      padding-right: 0.9375rem;
-      padding-left: 0.9375rem; } }
-
-.h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  text-align: center;
-  margin-bottom: 21px;
-  width: 100%; }
-  @media print, screen and (min-width: 64em) {
-    .h1 {
-      font-size: 4rem; } }
-
 .header {
   position: relative;
   z-index: 100;

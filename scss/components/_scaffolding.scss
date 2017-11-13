@@ -6,25 +6,3 @@ $spacer: 7px;
 .off-canvas-content {
   overflow-x: hidden;
 }
-
-
-/// Edge-to-edge content container.
-.full-width-container {
-  @include xy-grid-container;
-  padding: 0 !important;
-}
-
-
-.h1 {
-  font-size: 3rem;
-  font-weight: $global-weight-bold;
-  text-transform: uppercase;
-  letter-spacing: $spacer;
-  text-align: center;
-  margin-bottom: 3 * $spacer;
-  width: 100%;
-
-  @include breakpoint(large) {
-    font-size: 4rem;
-  }
-}
