@@ -1,48 +1,44 @@
 ////
 // Headline Styles
 ////
-@mixin -headline-shift($shift) {
-  $shift-size: -($base * $shift);
-  top: $shift-size;
-  margin-bottom: $shift-size;
-}
-
 .headline {
-  position: relative;
-  @include -headline-shift(14);
+  @include -shift-up(14);
 
   @include breakpoint(medium) {
-    @include -headline-shift(18);
+    @include -shift-up(18);
   }
 
   @include breakpoint(large) {
-    @include -headline-shift(22);
+    @include -shift-up(22);
   }
 
   @include breakpoint(xlarge) {
-    @include -headline-shift(28);
+    @include -shift-up(26);
   }
 
   .headline-background {
     @include -parallax-background($solar-panel-image, 0.2);
   }
 
+  // Control the size of the slider on different display sizes.
   .headline-slider-reel {
     @include container;
     padding: ($base * 6) ($base * 3);
+    width: 100%;
 
     @include breakpoint(medium) {
       width: 80%;
     }
 
-    @include breakpoint(xlarge) {
+    @include breakpoint(large) {
       width: 50%;
     }
 
     @include breakpoint(xxlarge) {
-      width: 40%;
+      width: 45%;
     }
 
+    // Styles for the actual slider
     .headline-slider {
       @include dot-slider;
 
@@ -60,6 +56,11 @@
 
       .headline-slider-caption {
         @include dot-slider-caption;
+      }
+
+      .headline-slider-caption-text {
+        color: $white;
+        margin: 0;
       }
 
       .headline-slider-next {

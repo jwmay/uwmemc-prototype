@@ -4,7 +4,7 @@
 .research-banner {
   @include banner(
     $processor-image,
-    $research-banner-bubble-diameter-large,
+    ($base * 42),
     ($base * 6)
   );
 
@@ -17,15 +17,14 @@
 
     .bubble {
       @include bubble(
-        $research-banner-bubble-diameter-small,
+        ($base * 36),
         ($base * 5),
         ($base * 3)
       );
-      
-      // Increase the size of bubble on xlarge displays.
-      @include breakpoint(xlarge) {
+
+      @include breakpoint(medium) {
         @include bubble(
-          $research-banner-bubble-diameter-large,
+          ($base * 42),
           ($base * 6),
           ($base * 4)
         );
@@ -54,15 +53,15 @@
     }
 
     .bubble-green {
-      background-color: $success-color;
+      background-color: rgba($success-color, 0.9);
     }
 
     .bubble-blue {
-      background-color: $secondary-color;
+      background-color: rgba($secondary-color, 0.9);
     }
 
     .bubble-purple {
-      background-color: $primary-color;
+      background-color: rgba($primary-color, 0.9);
     }
   }
 }
