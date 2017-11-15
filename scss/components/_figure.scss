@@ -1,0 +1,60 @@
+////
+// Figure base styles.
+////
+
+@mixin figure {
+  text-align: center;
+  margin: ($base * 6) 0;
+
+  @include breakpoint(medium) {
+    margin: ($base * 2) 0;
+  }
+}
+
+@mixin figure-left {
+  float: none;
+
+  @include breakpoint(medium) {
+    float: left;
+    margin-right: ($base * 8);
+  }
+}
+
+@mixin figure-right {
+  float: none;
+  
+  @include breakpoint(medium) {
+    float: right;
+    margin-left: ($base * 8);
+  }
+}
+
+@mixin figure-caption {
+  margin-top: ($base * 2);
+}
+
+@mixin image-dot {
+  border-radius: 100%;
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+.figure {
+  @include figure;
+
+  &.figure-left {
+    @include figure-left;
+  }
+  
+  &.figure-right {
+    @include figure-right;
+  }
+  
+  .figure-caption {
+    @include figure-caption;
+  }
+}
+
+.img-dot {
+  @include image-dot;
+}

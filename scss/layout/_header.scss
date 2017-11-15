@@ -59,18 +59,28 @@ $navbar-hover-diameter: $base * 20;
 }
 
 @mixin -header-section {
-  @include cell(6, ($base * 4));
+  @include cell(6);
   display: flex;
   align-items: center;
 }
 
 @mixin header-left {
   @include -header-section;
+  padding-left: ($base * 2);
+
+  @include breakpoint(large) {
+    padding: 0;
+  }
 }
 
 @mixin header-right {
   @include -header-section;
   justify-content: flex-end;
+  padding-right: ($base * 2);
+
+  @include breakpoint(large) {
+    padding: 0;
+  }
 }
 
 @mixin header-bottom {

@@ -96,11 +96,13 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/navigation';
+@import 'layout/article';
 
 // Components
 @import 'components/banner';
-@import 'components/buttons';
+@import 'components/button';
 @import 'components/dot-slider';
+@import 'components/figure';
 @import 'components/gallery';
 @import 'components/off-canvas';
 

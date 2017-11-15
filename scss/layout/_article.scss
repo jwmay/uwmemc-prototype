@@ -1,0 +1,39 @@
+////
+// Article base styles.
+////
+@mixin article {
+  @include container;
+  width: 100%;
+  margin-bottom: ($base * 10);
+  padding: 0 ($base * 2);
+
+  @include breakpoint(large) {
+    width: 50%;
+    margin-bottom: ($base * 20);
+    padding: 0;
+  }
+}
+
+@mixin article-section {
+  display: flex;
+  flex-flow: column nowrap;
+
+  // Force any figures in an article section to the end
+  // of that element on small devices.
+  .figure {
+    order: 1;
+  }
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+}
+
+
+.article {
+  @include article;
+}
+
+.article-section {
+  @include article-section;
+}
