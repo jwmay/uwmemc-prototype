@@ -52,4 +52,13 @@ $(function() {
     nextClass: 'headline-slider-next',
     prevClass: 'headline-slider-previous',
   });
+
+  ////
+  // Animation effect for the mobile nav menu toggle.
+  ////
+  var menuToggle = $('.header-toggle');
+  menuToggle.click(function() {
+    console.log('clicked');
+    $(this).toggleClass('active');
+  });
 });

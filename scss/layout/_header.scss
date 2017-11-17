@@ -100,6 +100,35 @@ $navbar-hover-diameter: $base * 20;
 }
 
 @mixin header-toggle {
+  width: ($base * 3);
+  cursor: pointer;
+
+  div {
+    border-top: 3px solid $black;
+    border-bottom: 3px solid $black;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      display: block;
+      background-color: $black;
+      height: 3px;
+      margin: 4px 0;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  &.active div {
+    background-color: $alert-color;
+    border: 3px solid $black;
+    border-radius: 100%;
+    height: ($base * 3);
+
+    span {
+      display: none;
+    }
+  }
+
+  // Hide the menu toggle on large displays.
   @include breakpoint(large) {
     display: none;
   }
