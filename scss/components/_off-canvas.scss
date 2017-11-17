@@ -36,9 +36,9 @@
   // Side Menu : Small Display Styles
   ////
   @include breakpoint(small) {
-    top: -50px;
+    top: -30px;
     height: 480px;
-    padding-top: 130px;
+    padding-top: 110px;
     padding-left: 90px;
   }
 
@@ -48,7 +48,7 @@
   @include breakpoint(medium) {
     top: -80px;
     height: 600px;
-    padding-top: 180px;
+    padding-top: 160px;
     padding-left: 80px;
   }
 }
