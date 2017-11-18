@@ -9,7 +9,7 @@
 
 // Generate a fixed background image for the gallery.
 @mixin gallery-background-img($url) {
-  @include -parallax-background($url, 0.2);
+  @include parallax-fixed-background($url, 0.2);
 }
 
 // Generate the main container of the gallery content.

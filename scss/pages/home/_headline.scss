@@ -16,10 +16,6 @@
     @include -shift-up(26);
   }
 
-  .headline-background {
-    @include -parallax-background($solar-panel-image, 0.2);
-  }
-
   // Control the size of the slider on different display sizes.
   .headline-slider-reel {
     @include container;
@@ -38,7 +34,7 @@
       width: 45%;
     }
 
-    // Styles for the actual slider
+    // Styles for the slider.
     .headline-slider {
       @include dot-slider;
 
@@ -75,4 +71,14 @@
       }
     }
   }
+
+  // Parallax scrolling effect for background image.
+  .parallax-fixed-slider {
+    @include parallax-fixed-slider($solar-panel-image, 0.2);
+  }
+}
+
+// Must be outside .headline to work properly with parallax.js.
+.parallax-scroll-slider {
+  @include parallax-scroll-slider;
 }

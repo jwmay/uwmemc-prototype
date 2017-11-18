@@ -52,4 +52,12 @@ $(function() {
     nextClass: 'headline-slider-next',
     prevClass: 'headline-slider-previous',
   });
+
+  ////
+  // Initialize parallax scroll background image effect.
+  ////
+  $('.parallax-scroll').parallax({
+    speed: -0.2,
+    sliderSelector: '>.parallax-scroll-slider',
+  });
 });

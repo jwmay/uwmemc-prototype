@@ -376,4 +376,24 @@
       }
     }
   }
+
+  // Base styles for the parallax scroll sample section.
+  .parallax-fixed-slider {
+    @include parallax-fixed-slider($solar-panel-image, 0.2);
+  }
+  
+  .parallax-scroll-content {
+    padding: ($base * 20) 0;
+  }
+  
+  .parallax-scroll-banner {
+    background-color: rgba($black, 0.6);
+    color: $white;
+    padding: ($base * 16) ($base * 8);
+  }
+}
+
+// Must be outside .styleguide to work properly with parallax.js.
+.parallax-scroll-slider {
+  @include parallax-scroll-slider;
 }

@@ -469,6 +469,17 @@
       <div class="grid">
         <div class="cell-full sg-section">
           <h2 class="sg-h2 sg-section-title">Parallax Scroll</h2>
+          <div class="parallax-scroll-sample">
+            <div class="parallax-fixed-slider"></div>
+            <div class="parallax-scroll-slider">
+              <img src="img/backgrounds/gallery-background.png" style="opacity:0.2;">
+            </div>
+            <div class="parallax-scroll-content">
+              <div class="parallax-scroll-banner">
+                This is a scrolling background image parallax effect.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -476,6 +487,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/vendor/jquery.parallax.min.js"></script>
     <script src="js/app.min.js"></script>
     <script>
       $(function() {
@@ -491,6 +503,12 @@
           nextClass: 'dot-slider-next',
           prevClass: 'dot-slider-previous',
         });
+      });
+
+      // Initialize the parallax scroll effect
+      $('.parallax-scroll-sample').parallax({
+        speed: -0.2,
+        sliderSelector: '>.parallax-scroll-slider',
       });
     </script>
   </body>
