@@ -3,7 +3,7 @@
 ////
 
 // Mixin for applying base font size and line height.
-@mixin base-typography {
+@mixin -base-typography {
   font-size: $base * 2;
   line-height: $base-unit * 2 / 10;
 
@@ -16,7 +16,7 @@
 
 // Base styles for the body. 
 body {
-  @include base-typography();
+  @include -base-typography();
 }
 
 
@@ -93,7 +93,7 @@ h6 {
 
 // Base styles for paragraph text.
 p {
-  @include base-typography();
+  @include -base-typography();
 
   margin-top: 0;
   margin-bottom: $base * 2;
