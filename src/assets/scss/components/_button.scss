@@ -1,0 +1,35 @@
+////
+// Base button styles.
+////
+
+// Base button styles for formatting all buttons.
+@mixin button-base {
+  padding: $base * 2 $base * 3;
+  border-radius: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: $base * 0.5;
+  cursor: pointer;
+}
+
+// Button filled with primary color.
+.btn-primary {
+  @include button-base;
+  @include button(false, $primary-color, $alert-color, $white, solid);
+
+  &:hover {
+    animation: multicolorBackground 1s linear;
+  }
+}
+
+// Hollow button with primary color.
+.btn-primary-hollow {
+  @include button-base;
+  @include button(false, $primary-color, $alert-color, $white, hollow);
+
+  &:hover {
+    color: $alert-color;
+    border-color: $alert-color;
+    animation: multicolorText 1s linear, multicolorBorder 1s linear;
+  }
+}

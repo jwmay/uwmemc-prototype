@@ -1,0 +1,44 @@
+////
+// Parallax effects.
+////
+
+// Create a background image with parallax effect. The parallax effect does not
+// work on iOS devices (and most mobile devices due to performance issues) so
+// the effect is disabled on mobile and enabled on large display sizes.
+@mixin parallax-fixed-background($url, $opacity: 1) {
+  background-image: url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: $opacity;
+  z-index: -1;
+
+  // Enable parallax effect on large display sizes.
+  @include breakpoint(large) {
+    background-attachment: fixed;
+  }
+}
+
+// Display a fixed background image for the parallax slider on mobile devices.
+@mixin parallax-fixed-slider($url, $opacity) {
+  @include parallax-fixed-background($url, $opacity);
+
+  // Fixed background needed as a fix for mobile, so hide it on large displays
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+
+// Display a scrolling background image for the parallax slider on non-mobile
+// devices.
+@mixin parallax-scroll-slider {
+  display: none;
+
+  @include breakpoint(large) {
+    display: block;
+  }
+}

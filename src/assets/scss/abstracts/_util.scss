@@ -1,0 +1,14 @@
+////
+// Utility mixins.
+////
+
+// Shifts an element up by an amount given by the specified $shift
+// times the $base unit. A negative margin-bottom equal to the shift amount
+// is applied in order to accommodate for the empty space below the element.
+// Note that the position of the shifted element is set to relative.
+@mixin -shift-up($shift) {
+  $shift-size: -($base * $shift);
+  top: $shift-size;
+  margin-bottom: $shift-size;
+  position: relative;
+}

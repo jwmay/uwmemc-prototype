@@ -1,0 +1,206 @@
+////
+// Footer : Base and Small Display Styles
+////
+.footer {
+  background-color: $primary-color;
+  border-radius: 100% 100% 0 0;
+  position: relative;
+  clear: both;
+  color: $white;
+  width: 200%;
+  left: -50%;
+  
+  // Base footer link styles.
+  a {
+    color: $white;
+    
+    &:hover {
+      animation: none;
+    }
+  }
+
+  // Container for the footer.
+  .footer-container {
+    @include container;
+    @include grid;
+    width: cell-size(1/2); // correct for the 200% width on .footer parent
+    align-content: space-between;
+    padding: 0 ($base * 2);
+  }
+
+  // Section containers for the footer. Full width on small displays, and
+  // one-third the width on medium and large displays.
+  .footer-section {
+    @include cell(12);
+    margin-top: ($base * 10);
+
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+  }
+
+  // Container for the legal section on the footer bottom.
+  .footer-bottom {
+    @include cell(12);
+    border-top: 1px solid lighten($primary-color, 10%);
+    padding: $base 0 ($base * 2) 0;
+    margin-top: ($base * 4);
+    font-size: ($base * 1.5);
+
+    a {
+      font-size: ($base * 1.5);
+      font-weight: $global-weight-normal;
+    }
+
+    .spacer {
+      margin: 0 ($base * 0.5);
+    }
+  }
+
+  // Footer site navigation links.
+  .nav {
+    @include menu-base;
+    @include menu-expand;
+    @include menu-direction(vertical);
+    text-align: center;
+
+    li {
+      text-transform: uppercase;
+
+      a {
+        display: inline-block;
+        font-size: ($base * 3);
+        padding: 0;
+        padding-bottom: $base;
+        margin-bottom: ($base * 2);
+
+        &:hover {
+          padding-bottom: ($base - 4);
+        }
+      } 
+    }
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .address {
+    padding-left: 13%;
+  }
+
+  .sponsor {
+    padding: ($base * 2);
+    display: block;
+    margin: 0 auto;
+
+    &.nsf {
+      width: 60%;
+    }
+  }
+
+  ////
+  // Footer : Medium Display Styles
+  ////
+  @include breakpoint(medium) {
+    width: 130%;
+    left: -15%;
+    
+    // Container for the footer.
+    .footer-container {
+      padding: 0;
+      width: cell-size(7/10); // correct for the 130% width on .footer parent
+    }
+    
+    // Section containers for the footer. Full width on small displays, and
+    // one-third the width on medium and large displays.
+    .footer-section {
+      @include cell(4);
+      margin-top: ($base * 20);
+
+      h3 {
+        font-size: ($base * 4);
+      }
+    }
+
+    // Container for the legal section on the footer bottom.
+    .footer-bottom {
+      padding-bottom: ($base * 3);
+    }
+
+    // Position adjustments for the sponsors section.
+    .sponsor-section {
+      position: relative;
+      top: -($base * 8);
+    }
+
+    // Position for the contact section.
+    .contact-section {
+      text-align: right;
+      position: relative;
+      top: -($base * 4);
+    }
+
+    // Footer site navigation links.
+    .nav {
+      text-align: left;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .address {
+      font-size: ($base * 2);
+    }
+
+    .sponsor {
+      padding: ($base * 3);
+
+      &.nsf {
+        width: 60%;
+      }
+
+      &.mrsec {
+        width: 90%;
+      }
+    }
+  }
+
+  ////
+  // Footer : Large Dispaly Styles
+  ////
+  @include breakpoint(large) {
+    // Container for the footer.
+    .footer-container {
+      width: cell-size(3/5); // correct for the 130% width on .footer parent
+    }
+
+    // Container for the legal section on the footer bottom.
+    .footer-bottom {
+      font-size: ($base * 2);
+
+      a {
+        font-size: ($base * 2);
+      }
+    }
+
+    .logo {
+      width: 90%;
+    }
+
+    .address {
+      font-size: ($base * 2.5);
+    }
+
+    .sponsor {
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

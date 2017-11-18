@@ -1,0 +1,124 @@
+////
+// Base typography styles.
+////
+
+// Mixin for applying base font size and line height.
+@mixin -base-typography {
+  font-size: $base * 2;
+  line-height: $base-unit * 2 / 10;
+
+  @include breakpoint(medium) {
+    font-size: $base * 2.5;
+    line-height: $base-unit * 2.125 / 10;
+  }
+}
+
+
+// Base styles for the body. 
+body {
+  @include -base-typography();
+}
+
+
+// Base styles for headers.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-top: $base * 5;
+  line-height: $base-unit * 1.75 / 10;
+  font-weight: $header-font-weight;
+}
+
+h1 {
+  font-size: $base * 5;
+  margin-bottom: $base * 4;
+  
+  @include breakpoint(medium) {
+    font-size: $base * 8;
+  }
+}
+
+h2 {
+  color: $alert-color;
+  font-size: $base * 4.5;
+  margin-bottom: $base * 3;
+  
+  @include breakpoint(medium) {
+    font-size: $base * 7;
+  }
+}
+
+h3 {
+  color: $warning-color;
+  font-size: $base * 4;
+  margin-bottom: $base * 2;
+  
+  @include breakpoint(medium) {
+    font-size: $base * 6;
+  }
+}
+
+h4 {
+  color: $success-color;
+  font-size: $base * 3.5;
+  margin-bottom: $base;
+  
+  @include breakpoint(medium) {
+    font-size: $base * 5;
+  }
+}
+
+h5 {
+  color: $secondary-color;
+  font-size: $base * 2.5;
+  text-transform: uppercase;
+  margin-bottom: $base;
+  
+  @include breakpoint(medium) {
+    font-size: $base * 3;
+  }
+}
+
+h6 {
+  color: $primary-color;
+  font-size: inherit;
+  text-transform: uppercase;
+  margin-bottom: $base;
+}
+
+
+// Base styles for paragraph text.
+p {
+  @include -base-typography();
+
+  margin-top: 0;
+  margin-bottom: $base * 2;
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+
+// Base styles for links.
+a {
+  font-size: inherit;
+  line-height: inherit;
+  color: $primary-color;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color: $alert-color;
+    animation: multicolorText 1s linear;
+    border-bottom: 2px dotted;
+
+    @include breakpoint(medium) {
+      border-bottom: 4px dotted;
+    }
+  }
+}
