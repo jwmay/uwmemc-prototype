@@ -210,7 +210,7 @@
   $diameter: ($base * 42);
   .bubble-banner-sample {
     @include banner(
-      'https://rawgit.com/jwmay/uwmemc/master/img/banner-background.png',
+      $semiconductor-image,
       $diameter,
       ($base * 6)
     );
@@ -246,7 +246,7 @@
     @include gallery;
   
     .gallery-background {
-      @include gallery-background-img('https://rawgit.com/jwmay/uwmemc/master/img/gallery-background.png');
+      @include gallery-background-img($solar-panel-image);
     }
   
     .gallery-container {

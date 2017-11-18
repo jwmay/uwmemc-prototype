@@ -3,7 +3,7 @@
 ////
 .research-banner {
   @include banner(
-    $processor-image,
+    $semiconductor-image,
     ($base * 42),
     ($base * 6)
   );

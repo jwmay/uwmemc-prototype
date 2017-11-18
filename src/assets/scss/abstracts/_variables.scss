@@ -1,5 +1,5 @@
 ////
-// Custom Variables
+// Custom variables.
 ////
 
 // Base unit upon which all sizing and spacing is based.
@@ -13,7 +13,7 @@ $grid-container: rem-calc(150 * $base);
 
 
 // Solar panel background image.
-$solar-panel-image: 'https://rawgit.com/jwmay/uwmemc/master/img/backgrounds/gallery-background.png';
+$solar-panel-image: './../img/backgrounds/solar-panel-gradient.png';
 
-// Processor background image.
-$processor-image: 'https://rawgit.com/jwmay/uwmemc/master/img/backgrounds/banner-background.png';
+// Semiconductor background image.
+$semiconductor-image: './../img/backgrounds/semiconductor.png';
