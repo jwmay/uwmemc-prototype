@@ -61,4 +61,12 @@ $(function() {
     console.log('clicked');
     $(this).toggleClass('active');
   });
+
+  ////
+  // Initialize parallax scroll background image effect.
+  ////
+  $('.parallax-scroll').parallax({
+    speed: -0.2,
+    sliderSelector: '>.parallax-scroll-slider',
+  });
 });

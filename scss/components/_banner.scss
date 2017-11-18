@@ -2,7 +2,7 @@
 // Banner : Base Styles
 ////
 @mixin banner($url, $diameter, $overhang) {
-  @include -parallax-background($url);
+  @include parallax-fixed-background($url);
   position: relative;
   width: 100%;
   display: flex;

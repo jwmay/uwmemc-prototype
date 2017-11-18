@@ -72,47 +72,54 @@
       </header>
 
       <div class="headline">
-        <div class="headline-background"></div>
-        <div class="headline-slider-reel">
-          <div class="headline-slider" role="region" aria-label="UW MEM-C Headline Photos">
-            <div class="headline-slider-controls">
-              <button class="headline-slider-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-              <button class="headline-slider-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+        <div class="parallax-scroll">
+          <div class="parallax-fixed-slider"></div>
+          <div class="parallax-scroll-slider">
+            <img src="img/backgrounds/gallery-background.png" style="opacity:0.2;" alt="Solar panel background image">
+          </div>
+          <div class="parallax-content">
+            <div class="headline-slider-reel">
+              <div class="headline-slider" role="region" aria-label="UW MEM-C Headline Photos">
+                <div class="headline-slider-controls">
+                  <button class="headline-slider-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="headline-slider-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                </div>
+                <ul class="headline-slider-container">
+                  <li class="headline-slider-slide is-active">
+                    <img class="headline-slider-image" src="img/orbit/rainier.jpg" alt="View of Rainier Vista">
+                    <div class="headline-slider-caption">
+                      <h5 class="headline-slider-caption-text">
+                        Rainier Vista<br>
+                        University of Washington
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="headline-slider-slide">
+                    <img class="headline-slider-image" src="img/orbit/research.jpg" alt="Picture of reasearchers">
+                    <div class="headline-slider-caption">
+                      <h5 class="headline-slider-caption-text">
+                        Interdisciplinary<br>
+                        research opportunities
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="headline-slider-slide">
+                    <img class="headline-slider-image" src="img/orbit/bagley-lab.jpg" alt="A research lab in Bagley Hall">
+                    <div class="headline-slider-caption">
+                      <h5 class="headline-slider-caption-text">
+                        Research Lab<br>
+                        Bagley Hall
+                      </h5>
+                    </div>
+                  </li>
+                </ul>
+                <nav class="headline-slider-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                </nav>
+              </div>
             </div>
-            <ul class="headline-slider-container">
-              <li class="headline-slider-slide is-active">
-                <img class="headline-slider-image" src="img/orbit/rainier.jpg" alt="View of Rainier Vista">
-                <div class="headline-slider-caption">
-                  <h5 class="headline-slider-caption-text">
-                    Rainier Vista<br>
-                    University of Washington
-                  </h5>
-                </div>
-              </li>
-              <li class="headline-slider-slide">
-                <img class="headline-slider-image" src="img/orbit/research.jpg" alt="Picture of reasearchers">
-                <div class="headline-slider-caption">
-                  <h5 class="headline-slider-caption-text">
-                    Interdisciplinary<br>
-                    research opportunities
-                  </h5>
-                </div>
-              </li>
-              <li class="headline-slider-slide">
-                <img class="headline-slider-image" src="img/orbit/bagley-lab.jpg" alt="A research lab in Bagley Hall">
-                <div class="headline-slider-caption">
-                  <h5 class="headline-slider-caption-text">
-                    Research Lab<br>
-                    Bagley Hall
-                  </h5>
-                </div>
-              </li>
-            </ul>
-            <nav class="headline-slider-bullets">
-              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-            </nav>
           </div>
         </div>
       </div>
@@ -349,6 +356,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
     <script src="https://use.fontawesome.com/c17e0ba756.js"></script>
+    <script src="js/vendor/jquery.parallax.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
