@@ -1,2 +1,6 @@
-config.codekit3
-bower_components/
+.DS_Store
+node_modules
+npm-debug.log
+bower_components
+dist
+*.swp
