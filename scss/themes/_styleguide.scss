@@ -358,6 +358,10 @@
       .dot-slider-caption {
         @include dot-slider-caption;
       }
+
+      .dot-slider-caption-text {
+        @include dot-slider-caption-text;
+      }
   
       .dot-slider-next {
         @include dot-slider-next;

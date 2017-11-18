@@ -59,8 +59,7 @@
       }
 
       .headline-slider-caption-text {
-        color: $white;
-        margin: 0;
+        @include dot-slider-caption-text;
       }
 
       .headline-slider-next {

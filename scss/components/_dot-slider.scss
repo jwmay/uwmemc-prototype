@@ -47,6 +47,11 @@
   }
 }
 
+@mixin dot-slider-caption-text {
+  color: $white;
+  margin: 0;
+}
+
 @mixin -dot-slider-control {
   @include orbit-control;
   border-radius: 100%;
