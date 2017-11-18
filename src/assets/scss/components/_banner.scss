@@ -1,5 +1,5 @@
 ////
-// Banner : Base Styles
+// Banner component styles.
 ////
 @mixin banner($url, $diameter, $overhang) {
   @include parallax-fixed-background($url);
