@@ -36,6 +36,10 @@
     @include tile-content;
   }
 
+  .news-item-read-more {
+    @include tile-link;
+  }
+
   .news-item-date {
     @include tile-tag;
   }
