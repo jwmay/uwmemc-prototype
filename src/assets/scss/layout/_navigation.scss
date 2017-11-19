@@ -18,32 +18,33 @@
   }
 }
 
-// Horizontal navbar nav item.
-@mixin nav-item {
+// Horizontal navbar menu component.
+@mixin navbar-menu {
   @include menu-base;
   width: $grid-container;
   justify-content: center;
-  
-  li a {
-    $diameter: ($base * 20);
-    width: $diameter;
-    height: $diameter;
-    line-height: $diameter;
-    padding: 0;
-    text-align: center;
-    color: $dark-gray;
-    font-size: $base * 3;
-    font-weight: $global-weight-normal;
-    text-transform: uppercase;
-  
-    &:hover {
-      background-color: $alert-color;
-      border-radius: 100%;
-      border: 0;
-      opacity: 0.8;
-      color: $white;
-      animation: multicolorBackground 1s linear;
-    }
+}
+
+// Individual navbar links with animated hover effect.
+@mixin navbar-item {
+  $diameter: ($base * 20);
+  width: $diameter;
+  height: $diameter;
+  line-height: $diameter;
+  padding: 0;
+  text-align: center;
+  color: $dark-gray;
+  font-size: $base * 3;
+  font-weight: $global-weight-normal;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $alert-color;
+    border-radius: 100%;
+    border: 0;
+    opacity: 0.8;
+    color: $white;
+    animation: multicolorBackground 1s linear;
   }
 }
 
@@ -94,7 +95,11 @@
   @include navbar;
   
   .nav {
-    @include nav-item;
+    @include navbar-menu;
+
+    li a {
+      @include navbar-item;
+    }
   }
 }
 
