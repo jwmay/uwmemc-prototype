@@ -88,6 +88,7 @@
 
 // Generate a gallery-tile container.
 @mixin tile-container {
+  position: relative;
   background-color: $white;
   width: 70%;
   height: 100%;
@@ -116,6 +117,16 @@
   @include breakpoint(medium) {
     line-height: ($base * 4);
   }
+}
+
+// Generate a gallery-tile link component.
+@mixin tile-link {
+  width: 100%;
+  background-image: linear-gradient(to left, $white 50%, rgba($white,0.5));
+  text-align: right;
+  position: absolute;
+  bottom: 1px; // give clearance to border-bottom on link:hover
+  right: 0;
 }
 
 // Generate a gallery-tile tag.

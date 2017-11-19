@@ -312,6 +312,10 @@
           .tile-body {
             @include tile-content;
           }
+
+          .tile-read-more {
+            @include tile-link;
+          }
         }
 
         .tile-tag {
