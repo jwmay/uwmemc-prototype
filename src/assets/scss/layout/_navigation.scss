@@ -1,61 +1,103 @@
 ////
-// Navbar Styles
+// Navigation layout styles.
 ////
 
-/// Box shadowing for header elements.
-$header-box-shadow: 0px 6px 24px 1px rgba(0,0,0,0.3);
-
-/// Background color for header elements.
-$header-background-color: $white;
-
-/// Navbar height before page scrolling.
-$navbar-height-expanded: $base * 12;
-
-/// Navbar height after page scrolling.
-$navbar-height-collapsed: $base * 8;
-
-/// Navbar hover diameter.
-$navbar-hover-diameter: $base * 20;
-
-
-// Navbar styles.
-.navbar {
+// Horizontal navbar component.
+@mixin navbar {
   @include top-bar-container;
-  background-color: $header-background-color;
-  height: $navbar-height-expanded;
-  box-shadow: $header-box-shadow;
+  background-color: $white;
+  height: ($base * 12);
+  box-shadow: 0px 6px 24px 1px rgba(0,0,0,0.3);
   transition: height 0.25s ease;
   justify-content: center;
   overflow-y: hidden;
-
-  &.is-stuck {
-    height: $navbar-height-collapsed;
-  }
   
-  .nav {
-    @include menu-base;
-    width: $grid-container;
-    justify-content: center;
+  // Slight shrink of the height of the navbar when user scrolls down page.
+  &.is-stuck {
+    height: ($base * 8);
+  }
+}
 
-    li a {
-      padding: 0;
-      width: $navbar-hover-diameter;
-      height: $navbar-hover-diameter;
-      line-height: $navbar-hover-diameter;
-      font-size: $base * 3;
-      font-weight: $global-weight-normal;
-      text-transform: uppercase;
-      text-align: center;
-      color: $dark-gray;
-    
-      &:hover {
-        background-color: $alert-color;
-        border-radius: 100%;
-        border: 0;
-        opacity: 0.8;
-        color: $white;
-        animation: multicolorBackground 1s linear;
-      }
+// Horizontal navbar nav item.
+@mixin nav-item {
+  @include menu-base;
+  width: $grid-container;
+  justify-content: center;
+  
+  li a {
+    $diameter: ($base * 20);
+    width: $diameter;
+    height: $diameter;
+    line-height: $diameter;
+    padding: 0;
+    text-align: center;
+    color: $dark-gray;
+    font-size: $base * 3;
+    font-weight: $global-weight-normal;
+    text-transform: uppercase;
+  
+    &:hover {
+      background-color: $alert-color;
+      border-radius: 100%;
+      border: 0;
+      opacity: 0.8;
+      color: $white;
+      animation: multicolorBackground 1s linear;
     }
   }
+}
+
+
+// Vertical navigation menu component.
+@mixin nav-menu {
+  border-radius: 1000px 0 0 1000px;
+  padding-right: ($base * 2);
+  text-align: right;
+  
+  // Smaller menu size and spacing on smaller displays.
+  top: -30px;
+  height: 480px;
+  padding-top: 110px;
+  padding-left: 90px;
+    
+  // Larger menu size and spacing on larger displays.
+  @include breakpoint(medium) {
+    top: -80px;
+    height: 600px;
+    padding-top: 160px;
+    padding-left: 80px;
+  }
+  
+  li a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-size: ($base * 3);
+    margin-bottom: ($base / 2);
+    padding: 6px 0;
+    
+    @include breakpoint(medium) {
+      font-size: ($base * 3);
+      margin-bottom: $base;
+      padding: 8px 0;
+    }
+  
+    &:hover {
+      color: $alert-color;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+
+.navbar {
+  @include navbar;
+  
+  .nav {
+    @include nav-item;
+  }
+}
+
+.nav-menu-container {
+  @include nav-menu;
 }

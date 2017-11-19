@@ -1,0 +1,13 @@
+////
+// Off-canvas layout styles.
+////
+
+// Hide horizontal overflow content.
+.off-canvas-content {
+  overflow-x: hidden;
+}
+
+// Decrease opacity of off-canvas overlay.
+.js-off-canvas-overlay {
+  background: rgba(254, 254, 254, 0.85);
+}

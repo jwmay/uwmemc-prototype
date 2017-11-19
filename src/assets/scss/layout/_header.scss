@@ -1,22 +1,24 @@
+////
+// Header component styles.
+////
+
 /// Height of header on small/medium displays.
-$header-height-small: $base * 7;
+$header-height-small: ($base * 7);
 
 /// Height of header on large displays.
-$header-height-large: $base * 28;
+$header-height-large: ($base * 28);
 
 /// Navbar height before page scrolling.
-$navbar-height-expanded: $base * 12;
+$navbar-height-expanded: ($base * 12);
 
 /// Navbar height after page scrolling.
-$navbar-height-collapsed: $base * 8;
+$navbar-height-collapsed: ($base * 8);
 
 /// Navbar hover diameter.
-$navbar-hover-diameter: $base * 20;
+$navbar-hover-diameter: ($base * 20);
 
 
-////
-// Header : Base Styles
-////
+// Header component.
 @mixin header {
   height: $header-height-small;
   position: relative;
@@ -27,6 +29,7 @@ $navbar-hover-diameter: $base * 20;
   }
 }
 
+// Header top component that is visible on all dispaly sizes.
 @mixin header-top {
   background-color: $white;
 
@@ -42,28 +45,30 @@ $navbar-hover-diameter: $base * 20;
       position: fixed;
 
       .logo img {
-        max-height: $header-height-small - 16;
+        max-height: ($header-height-small - 16);
       }
     }
 
     @include breakpoint(large) {
       box-shadow: none;
       position: relative;
-      height: $header-height-large - $navbar-height-expanded;
+      height: ($header-height-large - $navbar-height-expanded);
 
       .logo img {
-        max-height: $header-height-large - $navbar-height-expanded - 32;
+        max-height: ($header-height-large - $navbar-height-expanded - 32);
       }
     }
   }
 }
 
+// Header section component.
 @mixin -header-section {
   @include cell(6);
   display: flex;
   align-items: center;
 }
 
+// Header left section component.
 @mixin header-left {
   @include -header-section;
   padding-left: ($base * 2);
@@ -73,6 +78,7 @@ $navbar-hover-diameter: $base * 20;
   }
 }
 
+// Header right section component.
 @mixin header-right {
   @include -header-section;
   justify-content: flex-end;
@@ -83,6 +89,7 @@ $navbar-hover-diameter: $base * 20;
   }
 }
 
+// Header bottom component that is only visible on large display sizes.
 @mixin header-bottom {
   display: none;
 
@@ -91,6 +98,7 @@ $navbar-hover-diameter: $base * 20;
   }
 }
 
+// Search form displayed only on large dispaly sizes.
 @mixin header-search {
   display: none;
   
@@ -99,10 +107,13 @@ $navbar-hover-diameter: $base * 20;
   }
 }
 
+// Mobile navigation menu toggle component with animation when clicked.
 @mixin header-toggle {
   width: ($base * 3);
   cursor: pointer;
 
+  // Hamburger icon created with span nested inside a div. This allows the
+  // central span to be hidden and the outer div to trans
   div {
     border-top: 3px solid $black;
     border-bottom: 3px solid $black;
@@ -117,6 +128,7 @@ $navbar-hover-diameter: $base * 20;
     }
   }
 
+  // Convert hamburger menu to a red close circle when clicked.
   .is-open-right & div {
     background-color: $alert-color;
     border: 3px solid $black;
