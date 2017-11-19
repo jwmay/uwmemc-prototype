@@ -2,14 +2,14 @@
 // Headline Styles
 ////
 .headline {
-  @include -shift-up(14);
+  @include -shift-up(12);
 
   @include breakpoint(medium) {
-    @include -shift-up(18);
+    @include -shift-up(16);
   }
 
   @include breakpoint(large) {
-    @include -shift-up(22);
+    @include -shift-up(20);
   }
 
   @include breakpoint(xlarge) {

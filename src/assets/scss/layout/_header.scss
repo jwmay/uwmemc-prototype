@@ -1,76 +1,32 @@
 ////
 // Header component styles.
 ////
-
-/// Height of header on small/medium displays.
-$header-height-small: ($base * 7);
-
-/// Height of header on large displays.
-$header-height-large: ($base * 28);
-
-/// Navbar height before page scrolling.
-$navbar-height-expanded: ($base * 12);
-
-/// Navbar height after page scrolling.
-$navbar-height-collapsed: ($base * 8);
-
-/// Navbar hover diameter.
-$navbar-hover-diameter: ($base * 20);
-
-
-// Header component.
 @mixin header {
-  height: $header-height-small;
   position: relative;
   z-index: 100;
+  height: ($base * 10);
 
   @include breakpoint(large) {
-    height: $header-height-large;
+    height: ($base * 32);
   }
 }
 
-// Header top component that is visible on all dispaly sizes.
-@mixin header-top {
+@mixin header-container {
   background-color: $white;
-
-  .header-top-container {
-    @include container;
-    @include grid;
-    width: 100%;
-
-    @include breakpoint(small) {
-      background-color: $white;
-      box-shadow: 0px 6px 24px 1px rgba(0,0,0,0.3);
-      height: $header-height-small;
-      position: fixed;
-
-      .logo img {
-        max-height: ($header-height-small - 16);
-      }
-    }
-
-    @include breakpoint(large) {
-      box-shadow: none;
-      position: relative;
-      height: ($header-height-large - $navbar-height-expanded);
-
-      .logo img {
-        max-height: ($header-height-large - $navbar-height-expanded - 32);
-      }
-    }
-  }
 }
 
-// Header section component.
-@mixin -header-section {
+@mixin header-row {
+  @include container;
+  @include grid;
+}
+
+@mixin header-section {
   @include cell(6);
   display: flex;
   align-items: center;
 }
 
-// Header left section component.
-@mixin header-left {
-  @include -header-section;
+@mixin header-section-left {
   padding-left: ($base * 2);
 
   @include breakpoint(large) {
@@ -78,9 +34,7 @@ $navbar-hover-diameter: ($base * 20);
   }
 }
 
-// Header right section component.
-@mixin header-right {
-  @include -header-section;
+@mixin header-section-right {
   justify-content: flex-end;
   padding-right: ($base * 2);
 
@@ -89,12 +43,20 @@ $navbar-hover-diameter: ($base * 20);
   }
 }
 
-// Header bottom component that is only visible on large display sizes.
-@mixin header-bottom {
-  display: none;
+@mixin header-branding {
+  height: 100%;
 
-  @include breakpoint(large) {    
+  a {
     display: block;
+    height: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  img {
+    max-height: 100%;
   }
 }
 
@@ -150,27 +112,58 @@ $navbar-hover-diameter: ($base * 20);
 .header {
   @include header;
 
-  .header-top {
-    @include header-top;
-  
-    .header-left {
-      @include header-left;
-    }
-    
-    .header-right {
-      @include header-right;
-    }
+  .header-container {
+    @include header-container;
   }
   
+  // Header with mobile nav toggle fixed to the top of the page on
+  // small/medium dispaly sizes.
+  .header-top-row {
+    @include header-row;
+    width: 100%;
+    height: ($base * 10);
+    background-color: $white;
+    box-shadow: 0 6px 24px 1px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    // Header scrolls with page on large display sizes. Only the navbar will
+    // remained fixed on the top of the page when scrolling down.
+    @include breakpoint(large) {
+      height: ($base * 20);
+      background-color: transparent;
+      box-shadow: none;
+      position: relative;
+    }
+  }
+
+  .header-section {
+    @include header-section;
+  }
+
+  .header-section-left {
+    @include header-section-left;
+  }
+
+  .header-section-right {
+    @include header-section-right;
+  }
+
+  .header-branding {
+    @include header-branding;
+    padding: $base 0;
+    
+    @include breakpoint(large) {
+      padding: ($base * 4) 0;
+    }
+  }
+
   .header-search {
     @include header-search;
   }
-  
+
   .header-toggle {
     @include header-toggle;
-  }
-
-  .header-bottom {
-    @include header-bottom;
   }
 }

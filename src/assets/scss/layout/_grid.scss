@@ -6,7 +6,7 @@
 // is specified by the $gird-container variable. The page
 // container is centered within the body.
 @mixin container {
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   max-width: $grid-container;
   margin: 0 auto;
   padding: 0;

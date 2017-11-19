@@ -6,6 +6,12 @@
 // Base container class.
 .styleguide {
   @include container;
+  margin-top: ($base * 10);
+
+  // Remove clearance for fixed header on small/medium dispaly sizes.
+  @include breakpoint(large) {
+    margin-top: 0;
+  }
 
   // Base grid class.
   .grid {
