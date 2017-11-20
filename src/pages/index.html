@@ -86,30 +86,8 @@
 <div class="gallery-news">
   <div class="gallery-news-container">
     <h1 class="gallery-news-title">News</h1>
-    <div class="gallery-news-item">
-      <div class="news-item-date">
-        <div class="date">
-          <div class="date-month">Nov</div>
-          <div class="date-day">20</div>
-        </div>
-      </div>
-      <div class="news-item-content">
-        <h6 class="news-item-header">
-          <a href="#">UW MEM&middot;C debuts online</a>
-        </h6>
-        <p class="news-item-body">
-          The Molecular Engineering and Materials Center (MEM&middot;C) is a new
-          research center at the University of Washington, Seattle. This center
-          has two central research obejctives: defects in nanostructures and 
-          layered quantum materials.
-        </p>
-        <div class="news-item-read-more">
-          <a href="#">Read more
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    {{> news-item item=news.items.[0]}}
+    {{> news-item item=news.items.[1]}}
   </div>
 </div>
 

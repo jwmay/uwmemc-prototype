@@ -16,7 +16,7 @@
 @mixin gallery-container {
   @include container;
   @include grid;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 // Generate a title for the gallery.

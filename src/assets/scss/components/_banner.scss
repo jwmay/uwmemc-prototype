@@ -21,7 +21,7 @@
   @include container;
   @include grid;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   @include breakpoint(large) {
     flex-flow: row nowrap;

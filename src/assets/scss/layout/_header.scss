@@ -24,6 +24,7 @@
   @include cell(6);
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 @mixin header-section-left {

@@ -16,7 +16,7 @@
   // Base grid class.
   .grid {
     @include grid;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0 ($base * 2);
 
     @include breakpoint($grid-container) {
