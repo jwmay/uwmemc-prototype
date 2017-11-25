@@ -1,12 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UW MEM&middot;C | Styleguide</title>
-    <link rel="icon" href="{{root}}assets/img/favicon.png" sizes="16x16" type="image/png">
+    <title>Styleguide | UW MEM&middot;C</title>
+    <link rel="icon" href="{{root}}assets/img/icons/favicon.png" sizes="16x16" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600" rel="stylesheet">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
@@ -193,9 +192,133 @@
         <div class="cell-full sg-section">
           <h2 class="sg-h2 sg-section-title">Buttons</h2>
           <div class="sg-item">
-            <button class="btn-primary">Submit</button>
-            <button class="btn-primary-hollow">Submit</button>
+            <button class="btn btn-primary">Filled</button>
+            <button class="btn btn-primary-hollow">Hollow</button>
           </div>
+          <div class="sg-item">
+            <button class="btn btn-primary btn-full">Filled Full</button>
+          </div>
+          <div class="sg-item">
+            <button class="btn btn-primary-hollow btn-full">Hollow Full</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="cell-full sg-section">
+          <h2 class="sg-h2 sg-section-title">Form Components</h2>
+          <form class="form-sample">
+            <label>
+              Text input
+              <input type="text" placeholder="Enter some text">
+            </label>
+
+            <label>
+              Number input
+              <input type="number" placeholder="Enter a number">
+            </label>
+
+            <label>
+              Text area
+              <textarea placeholder="Enter some paragraph text"></textarea>
+            </label>
+
+            <fieldset class="radio-group">
+              <legend>Radio group</legend>
+              <div class="radio-item">
+                <input type="radio" name="radioSample" value="one" id="radio1" required>
+                <label for="radio1">Radio 1</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" name="radioSample" value="two" id="radio2">
+                <label for="radio2">Radio 2</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" name="radioSample" value="three" id="radio3">
+                <label for="radio3">Radio 3</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="checkbox-group">
+              <legend>Checkbox group</legend>
+              <div class="checkbox-item">
+                <input id="checkbox1" type="checkbox">
+                <label for="checkbox1">Checkbox 1</label>
+              </div>
+              <div class="checkbox-item">
+                <input id="checkbox2" type="checkbox">
+                <label for="checkbox2">Checkbox 2</label>
+              </div>
+              <div class="checkbox-item">
+                <input id="checkbox3" type="checkbox">
+                <label for="checkbox3">Checkbox 3</label>
+              </div>
+            </fieldset>
+            
+            <fieldset class="radio-group inline-group">
+              <legend>Inline Radio group</legend>
+              <div class="radio-item">
+                <input type="radio" name="inlineRadioSample" value="one" id="inlineRadio1" required>
+                <label for="inlineRadio1">Radio 1</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" name="inlineRadioSample" value="two" id="inlineRadio2">
+                <label for="inlineRadio2">Radio 2</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" name="inlineRadioSample" value="three" id="inlineRadio3">
+                <label for="inlineRadio3">Radio 3</label>
+              </div>
+            </fieldset>
+
+            <label>
+              Select Menu
+              <select>
+                <option value="" selected data-default disabled>Select an option</option>
+                <option value="one">Option 1</option>
+                <option value="two">Option 2</option>
+                <option value="three">Option 3</option>
+                <option value="four">Option 4</option>
+              </select>
+            </label>
+
+            <label>
+              Multiple Select Menu
+              <select multiple>
+                <option value="one">Option 1</option>
+                <option value="two">Option 2</option>
+                <option value="three">Option 3</option>
+                <option value="four">Option 4</option>
+              </select>
+            </label>
+
+            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary-hollow">Reset</button>
+
+            <fieldset>
+              <legend>Fieldset 1</legend>
+              <label>
+                Input 1
+                <input type="text" placeholder="Enter some text">
+              </label>
+              <label>
+                Input 2
+                <input type="text" placeholder="Enter some more text">
+              </label>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Fieldset 2</legend>
+              <label>
+                Input 1
+                <input type="text" placeholder="Enter some text">
+              </label>
+              <label>
+                Input 2
+                <input type="text" placeholder="Enter some more text">
+              </label>
+            </fieldset>
+          </form>
         </div>
       </div>
 
@@ -547,8 +670,6 @@
         speed: -0.2,
         sliderSelector: '>.parallax-scroll-slider',
       });
-
     </script>
   </body>
-
 </html>
