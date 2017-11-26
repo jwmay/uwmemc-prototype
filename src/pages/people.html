@@ -1,122 +1,20 @@
-<div class="gallery-team">
-  <div class="gallery-team-container">
-    <h1 class="gallery-team-title">People</h1>
-    <h3 style="width:100%;">Leadership</h3>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/gamelin.jpg" alt="Daniel Gamelin" class="team-member-portrait">
-      <h2 class="team-member-name">Daniel Gamelin</h2>
-      <p class="team-member-title">
-        Director<br>
-        IRG 1 Lead
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/luscombe.jpg" alt="Christine Luscombe" class="team-member-portrait">
-      <h2 class="team-member-name">Christine Luscombe</h2>
-      <p class="team-member-title">
-        Exec. Dir. of Edu./Outreach<br>
-        IRG 1 Co-Lead
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/xu.jpg" alt="Xiaodong Xu" class="team-member-portrait">
-      <h2 class="team-member-name">Xiaodong Xu</h2>
-      <p class="team-member-title">
-        IRG 2 Lead
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/fu.jpg" alt="Kai-Mei Fu" class="team-member-portrait">
-      <h2 class="team-member-name">Kai-Mei Fu</h2>
-      <p class="team-member-title">
-        IRG 2 Co-Lead
-      </p>
-    </div>
-    <h3 style="width:100%;">IRG 1</h3>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/cossairt.jpg" alt="Brandi Cossairt" class="team-member-portrait">
-      <h2 class="team-member-name">Brandi Cossairt</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/deyoreo.jpg" alt="Jim DeYoreo" class="team-member-portrait">
-      <h2 class="team-member-name">Jim DeYoreo</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/dunham.jpg" alt="Scott Dunham" class="team-member-portrait">
-      <h2 class="team-member-name">Scott Dunham</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/hillhouse.jpg" alt="Hugh Hillhouse" class="team-member-portrait">
-      <h2 class="team-member-name">Hugh Hillhouse</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/holmberg.jpg" alt="Vincent Holmberg" class="team-member-portrait">
-      <h2 class="team-member-name">Vincent Holmberg</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/pauzauskie.jpg" alt="Peter Pauzauskie" class="team-member-portrait">
-      <h2 class="team-member-name">Peter Pauzauskie</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/ginger.jpg" alt="David Ginger" class="team-member-portrait">
-      <h2 class="team-member-name">David Ginger</h2>
-      <p class="team-member-title">
-        IRG 1
-      </p>
-    </div>
-    <h3 style="width:100%;">IRG 2</h3>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/andreev.jpg" alt="Anton Andreev" class="team-member-portrait">
-      <h2 class="team-member-name">Anton Andreev</h2>
-      <p class="team-member-title">
-        IRG 2
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/chu.jpg" alt="Jiun-Haw Chu" class="team-member-portrait">
-      <h2 class="team-member-name">Jiun-Haw Chu</h2>
-      <p class="team-member-title">
-        IRG 2
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/cobden.jpg" alt="David Cobden" class="team-member-portrait">
-      <h2 class="team-member-name">David Cobden</h2>
-      <p class="team-member-title">
-        IRG 2
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/li.jpg" alt="Xiaosong Li" class="team-member-portrait">
-      <h2 class="team-member-name">Xiaosong Li</h2>
-      <p class="team-member-title">
-        IRG 1 & 2
-      </p>
-    </div>
-    <div class="gallery-team-member">
-      <img src="{{root}}assets/img/team/yang.jpg" alt="Jihui Yang" class="team-member-portrait">
-      <h2 class="team-member-name">Jihui Yang</h2>
-      <p class="team-member-title">
-        IRG 2
-      </p>
+<div class="article">
+  <div class="directory">
+    <div class="directory-container">    
+      <h1>People</h1>
+      <h2 style="width:100%;">Leadership</h2>
+      {{#each team.members}}
+        {{#ifequal this.lead 'yes'}}
+          {{> directory member=this}}
+        {{/ifequal}}
+      {{/each}}
+      
+      <h2 style="width:100%;">Member Faculty</h2>
+      {{#each team.members}}
+        {{#ifequal this.lead 'no'}}
+          {{> directory member=this}}
+        {{/ifequal}}
+      {{/each}}
     </div>
   </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="directory-item">
+  <div class="member-content">
+    <div class="member-portrait">
+      <img src="{{member.portraitUrl}}" alt="{{member.name}} portrait">
+    </div>
+    <div class="member-info">
+      <h4 class="member-name">{{member.name}}</h4>
+      <p class="member-title">
+        {{#if member.title}}
+          {{member.title}}<br>
+        {{/if}}
+        IRG {{member.irg}}
+      </p>
+      <div class="member-links">
+        <a href="mailto:{{member.email}}">Email</a>
+        <span class="spacer"></span>
+        <a href="{{member.website}}" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
+</div>

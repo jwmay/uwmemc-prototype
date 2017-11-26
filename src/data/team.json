@@ -1,0 +1,148 @@
+{
+  "members": [
+    {
+      "name": "Daniel Gamelin",
+      "title": "Director",
+      "irg": "1 Lead",
+      "lead": "yes",
+      "email": "gamelin@chem.washington.edu",
+      "website": "http://depts.washington.edu/gmrg/",
+      "portraitUrl": "assets/img/team/gamelin.jpg"
+    },
+    {
+      "name": "Christine Luscombe",
+      "title": "Exec. Dir. of Edu./Outreach",
+      "irg": "1 Co-Lead",
+      "lead": "yes",
+      "email": "luscombe@u.washington.edu",
+      "website": "https://faculty.washington.edu/luscombe/Prof._Christine_Luscombe.html",
+      "portraitUrl": "assets/img/team/luscombe.jpg"
+    },
+    {
+      "name": "Xiaodong Xu",
+      "title": "",
+      "irg": "2 Lead",
+      "lead": "yes",
+      "email": "xuxd@uw.edu",
+      "website": "http://depts.washington.edu/xulab/",
+      "portraitUrl": "assets/img/team/xu.jpg"
+    },
+    {
+      "name": "Kai-Mei Fu",
+      "title": "",
+      "irg": "2 Co-Lead",
+      "lead": "yes",
+      "email": "kaimeifu@uw.edu",
+      "website": "https://sharepoint.washington.edu/phys/research/optospinlab/Pages/default.aspx",
+      "portraitUrl": "assets/img/team/fu.jpg"
+    },
+    {
+      "name": "Brandi Cossairt",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "cossairt@chem.washington.edu",
+      "website": "http://brandicossairt.wix.com/cossairtlab",
+      "portraitUrl": "assets/img/team/cossairt.jpg"
+    },
+    {
+      "name": "Jim DeYoreo",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "jjdy@uw.edu",
+      "website": "https://www.pnnl.gov/science/staff/staff_info.asp?staff_num=7906",
+      "portraitUrl": "assets/img/team/deyoreo.jpg"
+    },
+    {
+      "name": "Scott Dunham",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "dunham@ee.washington.edu",
+      "website": "http://dunham.ee.washington.edu/",
+      "portraitUrl": "assets/img/team/dunham.jpg"
+    },
+    {
+      "name": "Hugh Hillhouse",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "h2@uw.edu",
+      "website": "http://faculty.washington.edu/h2/",
+      "portraitUrl": "assets/img/team/hillhouse.jpg"
+    },
+    {
+      "name": "Vincent Holmberg",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "holmvc@uw.edu",
+      "website": "http://holmberglab.washington.edu/",
+      "portraitUrl": "assets/img/team/holmberg.jpg"
+    },
+    {
+      "name": "Peter Pauzauskie",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "peterpz@uw.edu",
+      "website": "http://depts.washington.edu/pzlab/wordpress/",
+      "portraitUrl": "assets/img/team/pauzauskie.jpg"
+    },
+    {
+      "name": "David Ginger",
+      "title": "",
+      "irg": "1",
+      "lead": "no",
+      "email": "dginger@uw.edu",
+      "website": "http://faculty.washington.edu/dginger/",
+      "portraitUrl": "assets/img/team/ginger.jpg"
+    },
+    {
+      "name": "Anton Andreev",
+      "title": "",
+      "irg": "2",
+      "lead": "no",
+      "email": "aandreev@uw.edu",
+      "website": "http://faculty.washington.edu/aandreev/",
+      "portraitUrl": "assets/img/team/andreev.jpg"
+    },
+    {
+      "name": "Jiun-Haw Chu",
+      "title": "",
+      "irg": "2",
+      "lead": "no",
+      "email": "jhchu@uw.edu",
+      "website": "https://sharepoint.washington.edu/phys/people/Pages/view-person.aspx?pid=735",
+      "portraitUrl": "assets/img/team/chu.jpg"
+    },
+    {
+      "name": "David Cobden",
+      "title": "",
+      "irg": "2",
+      "lead": "no",
+      "email": "cobden@uw.edu",
+      "website": "https://sharepoint.washington.edu/phys/research/nanodevicelab",
+      "portraitUrl": "assets/img/team/cobden.jpg"
+    },
+    {
+      "name": "Xiaosong Li",
+      "title": "",
+      "irg": "1 & 2",
+      "lead": "no",
+      "email": "xsli@uw.edu",
+      "website": "http://depts.washington.edu/ligroup/",
+      "portraitUrl": "assets/img/team/li.jpg"
+    },
+    {
+      "name": "Jihui Yang",
+      "title": "",
+      "irg": "2",
+      "lead": "no",
+      "email": "jihuiy@uw.edu",
+      "website": "http://faculty.washington.edu/jihuiy/index.htm",
+      "portraitUrl": "assets/img/team/yang.jpg"
+    }
+  ]
+}
